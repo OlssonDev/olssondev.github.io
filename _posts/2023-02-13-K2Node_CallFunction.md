@@ -9,4 +9,4 @@ Let's say you have a UFUNCTION you want to improve the UX on or make fancier in 
 
 That's where **K2Node_CallFunction** comes in and saves the day with minimal setup!
 
-**In Progress**
+**In progress...**

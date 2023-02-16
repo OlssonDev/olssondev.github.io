@@ -73,7 +73,7 @@ UK2Node_MyFancyNode::UK2Node_MyFancyNode(const FObjectInitializer& ObjectInitial
 }
 ``` 
 
-Now your node is fully setup, and you can do what you want with it. All pins and logic are already handled by the UK2Node_CallFunction class, and the node is being added to the node list throug our base class.
+Now your node is fully setup, and you can do what you want with it. All pins and logic are already handled by the UK2Node_CallFunction class, and the node is being added to the node list through our base class.
 
 {: .box-note}
 **Note:** K2_CallFunction makes use of [UFUNCTION](https://benui.ca/unreal/ufunction/) / [UPARAM](https://benui.ca/unreal/uparam/) specifiers, so you don't need to override functions like **GetMenuCategory** and **GetTooltipText** unless you don't specify it in the UFUNCTION.

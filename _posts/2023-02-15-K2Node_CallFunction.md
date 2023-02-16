@@ -12,7 +12,7 @@ That's where **K2Node_CallFunction** comes in and saves the day with minimal set
 
 ## Create the base class
 
-Let's make a base node for all our UK2Node_CallFunction so we don't have to add the boilerplate code for each new node.
+Let’s make a base node for all our UK2Node_CallFunction, so we don’t have to add the boilerplate code for each new node:
 
 ```javascript
 //.h
@@ -41,5 +41,9 @@ void UK2Node_MyBaseNode::GetMenuActions(FBlueprintActionDatabaseRegistrar& Actio
 	}
 }
 ``` 
+
+## Start making fancy nodes
+
+
 
 **In progress...**

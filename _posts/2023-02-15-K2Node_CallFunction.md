@@ -44,6 +44,36 @@ void UK2Node_MyBaseNode::GetMenuActions(FBlueprintActionDatabaseRegistrar& Actio
 
 ## Start making fancy nodes
 
+Make a new class that inherits from the node base class you just created.
 
+```javascript
+//.h
+UCLASS()
+class UK2Node_MyFancyNode : public UK2Node_MyBaseNode
+{
+	GENERATED_BODY()
 
-**In progress...**
+	public:
+
+	UK2Node_MyFancyNode(const FObjectInitializer& ObjectInitializer);
+};
+
+//.cpp (Static UFUNCTION implementation)
+UK2Node_MyFancyNode::UK2Node_MyFancyNode(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
+{
+    //Set the static function you want this node to call and populate pins from.
+	FunctionReference.SetExternalMember(GET_FUNCTION_NAME_CHECKED(MyCustomClass, MyStaticFunction), MyCustomClass::StaticClass());
+}
+
+//.cpp (Non-static UFUNCTION implementation)
+UK2Node_MyFancyNode::UK2Node_MyFancyNode(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
+{
+    //Set the non-static function you want this node to call and populate pins from.
+    FunctionReference.SetFromField<UFunction>(MyCustomClass::StaticClass()->FindFunctionByName(GET_FUNCTION_NAME_CHECKED(MyCustomClass, MyNonStaticFunction)), true);
+}
+``` 
+
+Now your node is fully setup, and you can do what you want with it. All pins and logic are already handled by the UK2Node_CallFunction class, and the node is being added to the node list throug our base class.
+
+{: .box-note}
+**Note:** K2_CallFunction makes use of [UFUNCTION](https://benui.ca/unreal/ufunction/) / [UPARAM](https://benui.ca/unreal/uparam/) specifiers, so you don't need to override functions like **GetMenuCategory** and **GetTooltipText** unless you don't specify it in the UFUNCTION.

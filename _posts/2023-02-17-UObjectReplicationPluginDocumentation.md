@@ -3,9 +3,9 @@ layout: post
 title: UObject Replication Plugin Documentation
 ---
 
-[Marketplace Page](https://www.unrealengine.com/marketplace/en-US/product/34834b25f9b94125a015342fb3fae218)
-
 ## Plugin Overview
+
+[Marketplace Page](https://www.unrealengine.com/marketplace/en-US/product/34834b25f9b94125a015342fb3fae218)
 
 In Unreal Engine, two main classes are used for replication, Actors and Actor Components. With just a simple checkbox away, you’re up and running with replicating those classes.
 
@@ -118,19 +118,19 @@ The functions from earlier are now callable in your custom UObject Replication M
 
 ## Common Issues
 
-### My Replicated UObjects are not replicating!
+**My Replicated UObjects are not replicating!**
 
 Make sure that the Actor you’re replicating from is set to **Replicates**, the UObject Replication Manager component is set to **Component Replicates**, and your variable/array is set to **Replicate/RepNotify**, and that you create/destroy Replicated UObjects on the **server**.
 
-### My Replicated UObjects don’t get destroyed!
+**My Replicated UObjects don’t get destroyed!**
 
 Make sure you ONLY destroy Replicated UObjects on the server.
 
-### I can’t see the UObject Replication category in the content browser.
+**I can’t see the UObject Replication category in the content browser.**
 
 Make sure the plugin is installed on the correct engine version, and the plugin is set to be enabled.
 
-### My replicated UObjects are replicating slowly!
+**My replicated UObjects are replicating slowly!**
 
 Check the Actor with the UObject Replication Manager that the **Net Update Frequency** is reasonable. The default for Actors is 100.
 

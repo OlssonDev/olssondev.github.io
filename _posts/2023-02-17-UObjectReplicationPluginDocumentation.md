@@ -5,6 +5,10 @@ title: UObject Replication Plugin Documentation
 
 [Marketplace Page](https://www.unrealengine.com/marketplace/en-US/product/34834b25f9b94125a015342fb3fae218)
 
+[Support](https://discord.gg/NenE6EptdD)
+
+Supported Unreal Engine Versions: 4.27 - 5.1
+
 ## Plugin Overview
 
 In Unreal Engine, two main classes are used for replication, Actors and Actor Components. With just a simple checkbox away, you’re up and running with replicating those classes.

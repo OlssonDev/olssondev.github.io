@@ -11,7 +11,7 @@ title: Easy Asset Creator Documentation
 * [Asset Factory](#asset-factory)
     + [Create an Asset Factory](#create-an-asset-factory)
 	+ [Setting up your Asset Factory](#setting-up-your-asset-factory)
-* [Cosmetics](#cosmetics)
+* [Asset Appearance](#asset-appearanc)
 
 <a name="plugin-overview"></a>
 ## Plugin Overview 
@@ -102,6 +102,36 @@ If true, summons a class picker when you click to create a new class in the cate
 
 ![UseClassPicker](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_12.JPG)
 
-## Cosmetics
+<a name="asset-appearance"></a>
+## Asset appearance
+
+#### Asset name & tooltip
+
+You might not want the default asset name/tooltip to be displayed when hovered, and that is an easy fix.
+
+Go into the asset and click on Class Settings and this should show up:
+
+![OldNameTooltipImage](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_13.JPG)
+
+Change to what you want under **Blueprint Display Name** and **Blueprint Description**, and compile and save.
+
+Now your asset should be displayed with the new name and tooltip:
+
+![NewNameTooltipImage](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_14.JPG)
+
+#### Asset Color
+
+To change the color of the Asset in the menu, go into your Asset Action and change the color under **Asset Color**
+
+{: .box-note}
+**Note:** This will **not** change color of the asset once its created due to engine back-end stuff.
+
+![AssetActionChangeColor](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_15.JPG)
+
+Now your asset will appear in a different color:
+
+![AssetActionChangeColor](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_16.JPG)
+
+## Asset Action Fragments
 
 **In progress...**

@@ -11,7 +11,7 @@ title: Easy Asset Creator Documentation
 * [Asset Factory](#asset-factory)
     + [Create an Asset Factory](#create-an-asset-factory)
 	+ [Setting up your Asset Factory](#setting-up-your-asset-factory)
-	+ [Cosmetics](#cosmetics)
+* [Cosmetics](#cosmetics)
 
 <a name="plugin-overview"></a>
 ## Plugin Overview 
@@ -98,7 +98,7 @@ If you want to give the asset a custom default name once its created, assign it 
 
 #### Use Class Picker
 
-If true, summon a class picker once you click to create a new class in the category menu:
+If true, summons a class picker when you click to create a new class in the category menu:
 
 ![UseClassPicker](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_12.JPG)
 

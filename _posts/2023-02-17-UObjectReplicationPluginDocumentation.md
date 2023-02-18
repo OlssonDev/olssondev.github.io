@@ -26,7 +26,7 @@ In Unreal Engine, two main classes are used for replication, Actors and Actor Co
 But that is not the case with UObjects. They require C++ to set up replication, which this plugin will help you with.
 
 {: .box-note}
-**Note:** The documentation will not cover how multiplayer in Unreal Engine works, just how UObject replication works at a high level. The documentation expects you to have some knowledge about replication already. If you’re new to networking, here is an excellent resource about multiplayer in Unreal Engine: [UE Network Compendium](https://cedric-neukirchen.net/Downloads/Compendium/UE4_Network_Compendium_by_Cedric_eXi_Neukirchen.pdf).
+**Note:** The documentation will not cover how multiplayer in Unreal Engine works, just how UObject replication works at a high level. The documentation expects you to have some knowledge about replication already. If you’re new to networking, here is an excellent resource about multiplayer in Unreal Engine: [UE Network Compendium](https://cedric-neukirchen.net/Downloads/Compendium/UE4_Network_Compendium_by_Cedric_eXi_Neukirchen.pdf){:target="_blank"}.
 
 <a name="create-a-replicated-uobject"></a>
 ## Create a Replicated UObject 
@@ -119,9 +119,9 @@ You can manually destroy the Replicated UObject by using **Destroy Replicated UO
 
 UCustom Object Replication Managers is where this plugin shines. You can create modular systems using Replicated UObjects as the system's foundation. 
 
-In [Lyra](https://dev.epicgames.com/community/learning/paths/Z4/lyra-starter-game), each gun in an inventory slot is a replicated UObject. When the player picks up a gun in Lyra, the gun they see in their inventory is a replicated UObject, and it’s responsible for managing the players’ ammunition, abilities, static mesh to spawn, inventory appearance (weapon icon et.c.), and much more!
+In [Lyra](https://dev.epicgames.com/community/learning/paths/Z4/lyra-starter-game){:target="_blank"}, each gun in an inventory slot is a replicated UObject. When the player picks up a gun in Lyra, the gun they see in their inventory is a replicated UObject, and it’s responsible for managing the players’ ammunition, abilities, static mesh to spawn, inventory appearance (weapon icon et.c.), and much more!
 
-Usually, ability systems make great use of replicated UObjects for their abilities. One of the ability systems that replicate abilities with UObjects is Unreal Engine's own [Gameplay Ability System](https://docs.unrealengine.com/5.0/en-US/gameplay-ability-system-for-unreal-engine/), which they use for Fortnite.
+Usually, ability systems make great use of replicated UObjects for their abilities. One of the ability systems that replicate abilities with UObjects is Unreal Engine's own [Gameplay Ability System](https://docs.unrealengine.com/5.0/en-US/gameplay-ability-system-for-unreal-engine/){:target="_blank"}, which they use for Fortnite.
 
 <a name="#make-custom-uobject-replication-managers"></a>
 ## Make Custom UObject Replication Managers 

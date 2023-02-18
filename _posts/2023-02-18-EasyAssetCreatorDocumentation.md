@@ -8,6 +8,7 @@ title: Easy Asset Creator Documentation
 * [Asset Actions](#asset-actions)
 * [Get Started](#get-started)
 * [Setting up your Asset Action](#setting-up-your-asset-action)
+* [Asset Factory](#asset-factory)
 
 <a name="plugin-overview"></a>
 ## Plugin Overview 
@@ -46,8 +47,20 @@ It should look like this:
 
 ![ClassDefaultsMenu](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/cd3d51729157931767de4eab1452581f1afcabb8/assets/img/EasyAssetCreator/Image_03.JPG)
 
-Choose the asset you want to expose in the **Asset Class** variable (I chose my own Quest class):
+Choose the asset you want to expose in the **Asset Class** variable:
 
 ![ChooseAsset](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_04.JPG)
+
+Now assign the category this asset should be exposed to in the different menus:
+
+![ChooseCategory](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_05.JPG)
+
+Now you are all done for the basic setup of an Asset Action!
+
+{: .box-note}
+**Note:** We will skip sub-menus for now, they'll come back later in the documentation.
+
+<a name="asset-factory"></a>
+## Asset Factory
 
 **In progress...**

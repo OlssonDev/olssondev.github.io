@@ -68,11 +68,11 @@ Now you are all done for the basic setup of an Asset Action!
 Factories are responsible for creating the actual asset and give it its name. Due to current engine "limitations", you unfortunately need both classes to expose your assets.
 
 <a name="create-an-asset-factory"></a>
-## Create an Asset Factory
+## Create  Asset Factory
 
 Start by right clicking in your content browser/drawer to create an **Asset Factory**.
 
-![CreateAssetFactoryImage](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_17.JPG)
+![CreateAssetFactoryImage](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_06.JPG)
 
 Now you have your first Asset Factory class ready!
 
@@ -81,7 +81,7 @@ Now you have your first Asset Factory class ready!
 
 Open the Asset Factory and go to the Class Defaults menu:
 
-![AssetFactoeyClassDefaultsMenu](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_07.JPG)
+![AssetFactoeyClassDefaultsMenu](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_17.JPG)
 
 Now assign the same asset in the factory as in the Asset Action:
 

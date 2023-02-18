@@ -10,10 +10,6 @@ toc: true
 
 Supported Unreal Engine Versions: 4.27 - 5.1
 
-# Table of Contents
-1. [Plugin Overview](#plugin-overview)
-2. [Create a Replicated UObject](#Create-a-Replicated-UObject)
-
 ## Plugin Overview <a name="plugin-overview"></a>
 
 In Unreal Engine, two main classes are used for replication, Actors and Actor Components. With just a simple checkbox away, you’re up and running with replicating those classes.
@@ -23,8 +19,13 @@ But that is not the case with UObjects. They require C++ to set up replication, 
 {: .box-note}
 **Note:** The documentation will not cover how multiplayer in Unreal Engine works, just how UObject replication works at a high level. The documentation expects you to have some knowledge about replication already. If you’re new to networking, here is an excellent resource about multiplayer in Unreal Engine: [UE Network Compendium](https://cedric-neukirchen.net/Downloads/Compendium/UE4_Network_Compendium_by_Cedric_eXi_Neukirchen.pdf).
 
+# Table of Contents
+* [Create a Replicated UObject](#create-a-replicated-uobject)
+* [Setup your custom Replicated UObject](#setup-your-custom-replicated-uobject)
+*
 
-## Create a Replicated UObject
+
+## Create a Replicated UObject <a name="create-a-replicated-uobject"></a>
 
 Setting up a new custom Replicated UObject is very easy and intuitive.
 
@@ -32,7 +33,7 @@ Setting up a new custom Replicated UObject is very easy and intuitive.
 
 Right-click anywhere in your content browser, find the **“UObject Replication”** category and click on **“Replicated UObject”** to create your new Replicated UObject class.
 
-## Setup your custom Replicated UObject
+## Setup your custom Replicated UObject <a name="setup-your-custom-replicated-uobject"></a>
 
 The new Replicated UObject is already replicated by default.
 

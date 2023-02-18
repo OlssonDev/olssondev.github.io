@@ -19,9 +19,7 @@ Supported Unreal Engine Versions: 4.27 - 5.1
 * [Replicating Arrays](#replicating-arrays)
 * [Unregister UObjects from replication](#unregister-uobjects-from-replication)
 * [Custom UObject Replication Managers](#custom-uobject-replication-managers)
-* [Make Custom UObject Replication Managers](#make-custom-uobject-replication-managers)
 * [Setup your new UObject Replication Manager](#setup-your-new-uobject-replication-manager)
-* [Common Issues](#common-issues)
 
 ## Plugin Overview <a name="plugin-overview"></a>
 

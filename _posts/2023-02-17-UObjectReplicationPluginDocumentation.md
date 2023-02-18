@@ -123,7 +123,9 @@ Usually, ability systems make great use of replicated UObjects for their abiliti
 
 To make a custom Object Replication Manager is as easy as creating Replicated UObjects. Right-click anywhere in your content browser, find the  **“UObject Replication”** category and click on **“UObject Replication Manager”** to create your new UObject Replication Manager class.
 
-## Setup your new UObject Replication Manager <a name="#setup-your-new-uobject-replication-manager"></a>
+<a name="#setup-your-new-uobject-replication-manager">
+## Setup your new UObject Replication Manager
+</a>
 
 No more setup is required. The UObject Replication Manager is replicated by default.
 

@@ -10,7 +10,9 @@ toc: true
 
 Supported Unreal Engine Versions: 4.27 - 5.1
 
-[link](#1-Plugin-Overview)
+# Table of Contents
+1. [Plugin Overview](#Plugin-Overview)
+2. [Create a Replicated UObject](#Create-a-Replicated-UObject)
 
 ## Plugin Overview
 

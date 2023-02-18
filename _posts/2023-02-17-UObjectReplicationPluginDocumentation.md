@@ -4,7 +4,7 @@ title: UObject Replication Plugin Documentation
 toc: true
 ---
 
-[Marketplace Page](https://www.unrealengine.com/marketplace/en-US/product/34834b25f9b94125a015342fb3fae218)
+[Marketplace Page](https://www.unrealengine.com/marketplace/en-US/product/34834b25f9b94125a015342fb3fae218){:target="_blank"}
 
 # Table of Contents
 * [Plugin Overview](#plugin-overview)

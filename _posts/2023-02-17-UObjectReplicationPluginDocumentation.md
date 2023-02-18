@@ -117,7 +117,7 @@ You can manually destroy the Replicated UObject by using **Destroy Replicated UO
 <a name="custom-uobject-replication-managers"></a>
 ## Custom UObject Replication Managers 
 
-Custom Object Replication Managers is where this plugin shines. You can create modular systems using Replicated UObjects as the system's foundation. 
+UCustom Object Replication Managers is where this plugin shines. You can create modular systems using Replicated UObjects as the system's foundation. 
 
 In [Lyra](https://dev.epicgames.com/community/learning/paths/Z4/lyra-starter-game), each gun in an inventory slot is a replicated UObject. When the player picks up a gun in Lyra, the gun they see in their inventory is a replicated UObject, and it’s responsible for managing the players’ ammunition, abilities, static mesh to spawn, inventory appearance (weapon icon et.c.), and much more!
 
@@ -128,7 +128,7 @@ Usually, ability systems make great use of replicated UObjects for their abiliti
 
 ![MakeReplicationManager](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/MakeCustomReplicationManager.png)
 
-To make a custom Object Replication Manager is as easy as creating Replicated UObjects. Right-click anywhere in your content browser, find the  **“UObject Replication”** category and click on **“UObject Replication Manager”** to create your new UObject Replication Manager class.
+To make a custom UObject Replication Manager is as easy as creating Replicated UObjects. Right-click anywhere in your content browser, find the  **“UObject Replication”** category and click on **“UObject Replication Manager”** to create your new UObject Replication Manager class.
 
 <a name="#setup-your-new-uobject-replication-manager"></a>
 ## Setup your new UObject Replication Manager

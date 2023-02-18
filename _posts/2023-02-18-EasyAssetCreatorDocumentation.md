@@ -111,7 +111,7 @@ You might not want the default asset name/tooltip to be displayed when hovered, 
 
 Go into the asset and click on Class Settings and this should show up:
 
-![OldNameTooltipImage](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_13.JPG)
+![OldNameTooltipImage](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/8ec02df69d183ad6865bcba1cc2bc4795d4a2fc2/assets/img/EasyAssetCreator/Image_13.JPG)
 
 Change to what you want under **Blueprint Display Name** and **Blueprint Description**, and compile and save.
 

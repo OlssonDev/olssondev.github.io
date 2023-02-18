@@ -51,11 +51,11 @@ Open the Asset Action and go to the Class Defaults menu:
 
 Choose the asset you want to expose in the **Asset Class** variable:
 
-![ChooseAsset](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_04.JPG)
+![ChooseAsset](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_19.JPG)
 
 Now assign the category this asset should be exposed to in the different menus:
 
-![ChooseCategory](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_05.JPG)
+![ChooseCategory](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_20.JPG)
 
 Now you are all done for the basic setup of an Asset Action!
 

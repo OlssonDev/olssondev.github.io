@@ -135,4 +135,8 @@ Now your asset will appear in a different color:
 
 ## Asset Action Fragments
 
+Fragments are used in Asset Actions to add different functionalities to the asset in the editor.
+
+#### Add To Place Actors Menu
+
 **In progress...**

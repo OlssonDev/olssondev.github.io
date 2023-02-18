@@ -29,7 +29,6 @@ But that is not the case with UObjects. They require C++ to set up replication, 
 * [Custom UObject Replication Managers](#custom-uobject-replication-managers)
 * [Make Custom UObject Replication Managers](#make-custom-uobject-replication-managers)
 * [Setup your new UObject Replication Manager](#setup-your-new-uobject-replication-manager)
-* [Make Custom UObject Replication Managers](#make-custom-uobject-replication-managers)
 * [Common Issues](#common-issues)
 
 ## Create a Replicated UObject <a name="create-a-replicated-uobject"></a>

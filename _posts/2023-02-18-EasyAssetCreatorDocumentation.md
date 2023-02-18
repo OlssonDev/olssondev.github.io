@@ -47,7 +47,7 @@ Now you have your first Asset Action class ready!
 
 Open the Asset Action and go to the Class Defaults menu:
 
-![ClassDefaultsMenu](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/cd3d51729157931767de4eab1452581f1afcabb8/assets/img/EasyAssetCreator/Image_03.JPG)
+![ClassDefaultsMenu](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_17.JPG)
 
 Choose the asset you want to expose in the **Asset Class** variable:
 

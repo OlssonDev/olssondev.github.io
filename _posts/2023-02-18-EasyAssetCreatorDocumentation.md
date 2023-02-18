@@ -5,13 +5,14 @@ title: Easy Asset Creator Documentation
 
 # Table of Contents
 * [Plugin Overview](#plugin-overview)
-+ [Asset Actions](#asset-actions)
++ [Asset Action](#asset-action)
     + [Create an Asset Action](#create-an-asset-action)
     + [Setting up your Asset Action](#setting-up-your-asset-action)
 * [Asset Factory](#asset-factory)
     + [Create an Asset Factory](#create-an-asset-factory)
 	+ [Setting up your Asset Factory](#setting-up-your-asset-factory)
-* [Asset Appearance](#asset-appearanc)
+* [Asset Appearance](#asset-appearance)
+* [Asset Action Fragments](#asset-action-fragments)
 
 <a name="plugin-overview"></a>
 ## Plugin Overview 
@@ -19,7 +20,7 @@ title: Easy Asset Creator Documentation
 Making editor tools for creating and placing assets is a tedious and time consuming process, and usually requires C++ to set up. Easy Asset Creator makes it easy to create tools for your assets, and all of it can be managed inside the editor with no requirements for an editor restart.
 
 <a name="asset-action"></a>
-## Asset Actions
+## Asset Action
 
 Asset Action is the core of Easy Asset Creator and it handles how your class is gonna be exposed to the different editor menus.
 

@@ -73,7 +73,7 @@ Factories are responsible for creating the actual asset and give it its name. Du
 
 Start by right clicking in your content browser/drawer to create an **Asset Factory**.
 
-![CreateAssetFactoryImage](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_06.JPGg)
+![CreateAssetFactoryImage](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_06.JPG)
 
 Now you have your first Asset Factory class ready!
 

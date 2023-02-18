@@ -11,10 +11,10 @@ toc: true
 Supported Unreal Engine Versions: 4.27 - 5.1
 
 # Table of Contents
-1. [Plugin Overview](#Plugin-Overview)
+1. [Plugin Overview](#plugin-overview)
 2. [Create a Replicated UObject](#Create-a-Replicated-UObject)
 
-## Plugin Overview <a name="plugin overview"></a>
+## Plugin Overview <a name="plugin-overview"></a>
 
 In Unreal Engine, two main classes are used for replication, Actors and Actor Components. With just a simple checkbox away, you’re up and running with replicating those classes.
 

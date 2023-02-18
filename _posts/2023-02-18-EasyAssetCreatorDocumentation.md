@@ -10,8 +10,8 @@ title: Easy Asset Creator Documentation
     + [Setting up your Asset Action](#setting-up-your-asset-action)
 * [Asset Factory](#asset-factory)
     + [Create an Asset Factory](#create-an-asset-factory)
-
-
+	+ [Setting up your Asset Factory](#setting-up-your-asset-factory)
+	+ [Cosmetics](#cosmetics)
 
 <a name="plugin-overview"></a>
 ## Plugin Overview 
@@ -75,6 +75,7 @@ Start by right clicking in your content browser/drawer to create an **Asset Fact
 
 Now you have your first Asset Factory class ready!
 
+<a name="setting-up-your-asset-factory"></a>
 ## Setting up your Asset Factory
 
 Open the Asset Factory and go to the Class Defaults menu:
@@ -88,4 +89,19 @@ Now assign the same asset in the factory as in the Asset Action:
 Now you should be able to see your class in the **"Create Advanced Asset"** menu:
 
 ![CreateAdvancedMenu](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_11.JPG)
+
+#### Default Asset Name
+
+If you want to give the asset a custom default name once its created, assign it here:
+
+![DefaultAssetName](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_10.JPG)
+
+#### Use Class Picker
+
+If true, summon a class picker once you click to create a new class in the category menu:
+
+![UseClassPicker](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_12.JPG)
+
+## Cosmetics
+
 **In progress...**

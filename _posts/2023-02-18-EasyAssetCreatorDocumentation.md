@@ -40,4 +40,14 @@ Now you have your first Asset Action class ready!
 <a name="setting-up-your-asset-action"></a>
 ## Setting up your Asset Action
 
+Open up the Asset Action you just created and go to the Class Defaults menu.
+
+It should look like this:
+
+![ClassDefaultsMenu](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/cd3d51729157931767de4eab1452581f1afcabb8/assets/img/EasyAssetCreator/Image_03.JPG)
+
+Choose the asset you want to expose in the **Asset Class** variable (I chose my own Quest class):
+
+![ChooseAsset](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_04.JPG)
+
 **In progress...**

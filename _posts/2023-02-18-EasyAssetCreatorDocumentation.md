@@ -127,7 +127,7 @@ To change the color of the Asset in the menu, go into your Asset Action and chan
 {: .box-note}
 **Note:** This will **not** change color of the asset once its created due to engine back-end stuff.
 
-![AssetActionChangeColor](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_15.JPG)
+![AssetActionChangeColor](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_18.JPG)
 
 Now your asset will appear in a different color:
 

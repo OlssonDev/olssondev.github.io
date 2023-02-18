@@ -22,8 +22,15 @@ But that is not the case with UObjects. They require C++ to set up replication, 
 # Table of Contents
 * [Create a Replicated UObject](#create-a-replicated-uobject)
 * [Setup your custom Replicated UObject](#setup-your-custom-replicated-uobject)
-*
-
+* [UObject Replication Manager](#uobject-replication-manager)
+* [Add a UObject Replication Manager](#add-a-uobject-replication-manager)
+* [Replicating Arrays](#replicating-arrays)
+* [Unregister UObjects from replication](#unregister-uobjects-from-replication)
+* [Custom UObject Replication Managers](#custom-uobject-replication-managers)
+* [Make Custom UObject Replication Managers](#make-custom-uobject-replication-managers)
+* [Setup your new UObject Replication Manager](#setup-your-new-uobject-replication-manager)
+* [Make Custom UObject Replication Managers](#make-custom-uobject-replication-managers)
+* [Common Issues](#common-issues)
 
 ## Create a Replicated UObject <a name="create-a-replicated-uobject"></a>
 
@@ -47,7 +54,7 @@ That’s it for the Replicated UObject. Your Replicated UObject now supports any
 
 Now we just need to register it to a **UObject Replication Manager** in an Actor.
 
-## UObject Replication Manager
+## UObject Replication Manager <a name="uobject-replication-manager"></a>
 
 There is one caveat with replicating UObjects. You need to replicate them through an Actor and their **Actor Channel**. At a high-level Actor, Channels are used to send replicated data over the network, like RPCs and variables. 
 
@@ -55,13 +62,13 @@ We will replicate our UObjects the same way that Actor Components are replicated
 
 And that’s where our **UObject Replication Manager** comes in. You can put it on any Actor, and it’ll replicate the registered UObjects through the owning Actor’s Actor Channel.
 
-## Add a UObject Replication Manager
+## Add a UObject Replication Manager <a name="add-a-uobject-replication-manager"></a>
 
 To add a UObject Replication Manager to your Actor. Simply add it to your Actor as any other component in Unreal Engine, and you’re set.
 
 ![AddReplicationManager](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/AddReplicationManager.png)
 
-## Register UObjects for replication
+## Register UObjects for replication <a name="register-uobjects-for-replication"></a>
 
 With your actor's **UObject Replication Manager** setup, you can now register your first UObject for replication.
 
@@ -86,13 +93,13 @@ And simply connect the variable to the Register Replicated Object node from the 
 {: .box-note}
 **Note:** Make sure you construct and register the Replicated UObject on the server only. The Replicated UObject will get created on the clients automatically. Check that the Actor that the UObject Replication Manager is on, is replicating. 
 
-## Replicating Arrays
+## Replicating Arrays <a name="replicating-arrays"></a>
 
 ![ReplicateArrayOfUObjects](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/ReplicatingArray.png)
 
 Replicating an array of Replicated UObjects is the same procedure, but you add the Replicated UObject to the replicated array and register it. Execution order doesn’t matter.
 
-## Unregister UObjects from replication
+## Unregister UObjects from replication <a name="unregister-uobjects-from-replication"></a>
 
 ![UnregisterReplicatedUObject](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/UnregisterReplicatedUObject.png)
 
@@ -104,7 +111,7 @@ If you want to destroy the **Replicated UObject** as you’re unregistering it, 
 
 You can manually destroy the Replicated UObject by using **Destroy Replicated UObject** and it should only be called from the server. This will also unregister the Replicated UObject from being replicated.
 
-## Custom Object Replication Managers
+## Custom UObject Replication Managers <a name="custom-object-replication-managers"></a>
 
 Custom Object Replication Managers is where this plugin shines. You can create modular systems using Replicated UObjects as the system's foundation. 
 
@@ -112,13 +119,13 @@ In [Lyra](https://dev.epicgames.com/community/learning/paths/Z4/lyra-starter-gam
 
 Usually, ability systems make great use of replicated UObjects for their abilities. One of the ability systems that replicate abilities with UObjects is Unreal Engine's own [Gameplay Ability System](https://docs.unrealengine.com/5.0/en-US/gameplay-ability-system-for-unreal-engine/), which they use for Fortnite.
 
-## Make Custom Object Replication Managers
+## Make Custom UObject Replication Managers <a name="#make-custom-uobject-replication-managers"></a>
 
 ![MakeReplicationManager](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/MakeCustomReplicationManager.png)
 
 To make a custom Object Replication Manager is as easy as creating Replicated UObjects. Right-click anywhere in your content browser, find the  **“UObject Replication”** category and click on **“UObject Replication Manager”** to create your new UObject Replication Manager class.
 
-## Setup your new UObject Replication Manager
+## Setup your new UObject Replication Manager <a name="#setup-your-new-uobject-replication-manager"></a>
 
 No more setup is required. The UObject Replication Manager is replicated by default.
 
@@ -126,7 +133,7 @@ No more setup is required. The UObject Replication Manager is replicated by defa
 
 The functions from earlier are now callable in your custom UObject Replication Manager class. You can now start making modular systems like inventories, to add on any replicated Actor.
 
-## Common Issues
+## Common Issues <a name="#common-issues"></a>
 
 #### My Replicated UObjects are not replicating
 

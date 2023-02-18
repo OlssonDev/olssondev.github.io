@@ -10,16 +10,8 @@ toc: true
 
 Supported Unreal Engine Versions: 4.27 - 5.1
 
-## Plugin Overview <a name="plugin-overview"></a>
-
-In Unreal Engine, two main classes are used for replication, Actors and Actor Components. With just a simple checkbox away, you’re up and running with replicating those classes.
-
-But that is not the case with UObjects. They require C++ to set up replication, which this plugin will help you with.
-
-{: .box-note}
-**Note:** The documentation will not cover how multiplayer in Unreal Engine works, just how UObject replication works at a high level. The documentation expects you to have some knowledge about replication already. If you’re new to networking, here is an excellent resource about multiplayer in Unreal Engine: [UE Network Compendium](https://cedric-neukirchen.net/Downloads/Compendium/UE4_Network_Compendium_by_Cedric_eXi_Neukirchen.pdf).
-
 # Table of Contents
+* [Plugin Overview](#plugin-overview)
 * [Create a Replicated UObject](#create-a-replicated-uobject)
 * [Setup your custom Replicated UObject](#setup-your-custom-replicated-uobject)
 * [UObject Replication Manager](#uobject-replication-manager)
@@ -30,6 +22,15 @@ But that is not the case with UObjects. They require C++ to set up replication, 
 * [Make Custom UObject Replication Managers](#make-custom-uobject-replication-managers)
 * [Setup your new UObject Replication Manager](#setup-your-new-uobject-replication-manager)
 * [Common Issues](#common-issues)
+
+## Plugin Overview <a name="plugin-overview"></a>
+
+In Unreal Engine, two main classes are used for replication, Actors and Actor Components. With just a simple checkbox away, you’re up and running with replicating those classes.
+
+But that is not the case with UObjects. They require C++ to set up replication, which this plugin will help you with.
+
+{: .box-note}
+**Note:** The documentation will not cover how multiplayer in Unreal Engine works, just how UObject replication works at a high level. The documentation expects you to have some knowledge about replication already. If you’re new to networking, here is an excellent resource about multiplayer in Unreal Engine: [UE Network Compendium](https://cedric-neukirchen.net/Downloads/Compendium/UE4_Network_Compendium_by_Cedric_eXi_Neukirchen.pdf).
 
 ## Create a Replicated UObject <a name="create-a-replicated-uobject"></a>
 

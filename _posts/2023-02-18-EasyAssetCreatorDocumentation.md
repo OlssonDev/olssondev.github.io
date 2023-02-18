@@ -44,9 +44,7 @@ Now you have your first Asset Action class ready!
 <a name="setting-up-your-asset-action"></a>
 ## Setting up your Asset Action
 
-Open up the Asset Action you just created and go to the Class Defaults menu.
-
-It should look like this:
+Open the Asset Action and go to the Class Defaults menu:
 
 ![ClassDefaultsMenu](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/cd3d51729157931767de4eab1452581f1afcabb8/assets/img/EasyAssetCreator/Image_03.JPG)
 
@@ -77,7 +75,17 @@ Start by right clicking in your content browser/drawer to create an **Asset Fact
 
 Now you have your first Asset Factory class ready!
 
-
 ## Setting up your Asset Factory
 
+Open the Asset Factory and go to the Class Defaults menu:
+
+![AssetFactoeyClassDefaultsMenu](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_07.JPG)
+
+Now assign the same asset in the factory as in the Asset Action:
+
+![AssignClassFactory](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_08.JPG)
+
+Now you should be able to see your class in the **"Create Advanced Asset"** menu:
+
+![CreateAdvancedMenu](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_11.JPG)
 **In progress...**

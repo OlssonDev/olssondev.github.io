@@ -26,11 +26,11 @@ You need one Asset Action for each asset you want to expose.
 
 Start by right clicking in your content browser/drawer to create your first **Asset Action**.
 
-[CreateAssetActionImage](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_01.png)
+![CreateAssetActionImage](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_01.png)
 
 And just choose the Asset Action class:
 
-[ChooseAssetAction](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_02.JPG)
+![ChooseAssetAction](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_02.JPG)
 
 Now you have your first Asset Action class ready!
 

@@ -6,10 +6,10 @@ title: Easy Asset Creator Documentation
 # Table of Contents
 * [Plugin Overview](#plugin-overview)
 + [Asset Actions](#asset-actions)
-    + [Create your first Asset Action](#create-your-first-asset-action)
+    + [Create an Asset Action](#create-an-asset-action)
     + [Setting up your Asset Action](#setting-up-your-asset-action)
 * [Asset Factory](#asset-factory)
-    + [Create your first Asset Action](#create-your-first-asset-factory)
+    + [Create an Asset Factory](#create-an-asset-factory)
 
 
 
@@ -25,8 +25,8 @@ Asset Action is the core of Easy Asset Creator and it handles how your class is 
 
 You need one Asset Action for each asset you want to expose.
 
-<a name="create-your-first-asset-action"></a>
-## Create your first Asset Action
+<a name="create-an-asset-action"></a>
+## Create an Asset Action
 
 Start by right clicking in your content browser/drawer to create an **Asset Action**.
 
@@ -68,6 +68,7 @@ Now you are all done for the basic setup of an Asset Action!
 
 Factories are responsible for creating the actual asset and give it its name. Due to current engine "limitations", you unfortunately need both classes to expose your assets.
 
+<a name="create-an-asset-factory"></a>
 ## Create your first Asset Factory
 
 Start by right clicking in your content browser/drawer to create an **Asset Factory**.
@@ -76,7 +77,7 @@ Start by right clicking in your content browser/drawer to create an **Asset Fact
 
 Now you have your first Asset Factory class ready!
 
-<a name="create-your-first-asset-factory"></a>
+
 ## Setting up your Asset Factory
 
 **In progress...**

@@ -111,7 +111,7 @@ If you want to destroy the **Replicated UObject** as you’re unregistering it, 
 
 You can manually destroy the Replicated UObject by using **Destroy Replicated UObject** and it should only be called from the server. This will also unregister the Replicated UObject from being replicated.
 
-## Custom UObject Replication Managers <a name="custom-object-replication-managers"></a>
+## Custom UObject Replication Managers <a name="custom-uobject-replication-managers"></a>
 
 Custom Object Replication Managers is where this plugin shines. You can create modular systems using Replicated UObjects as the system's foundation. 
 

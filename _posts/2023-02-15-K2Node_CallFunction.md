@@ -3,6 +3,14 @@ layout: post
 title: Make UFUNCTIONs fancier, and fast with K2Node_CallFunction
 ---
 
+# Table of Contents
+* [Introduction to K2Node_CallFunction](#introduction-to-k2nodecallfunction)
+* [Create the base class](#create-the-base-class)
+* [Make your first K2Node_CallFunction node](#make-your-first-k2nodecallfunction-node)
+
+<a name="introduction-to-k2nodecallfunction"></a>
+## Introduction to K2Node_CallFunction
+
 {: .box-note}
 **Note:** If you're new to K2Nodes, I'd suggest you check out my post: [Introduction to K2Node](https://olssondev.github.io/2023-02-13-K2Nodes/).
 
@@ -10,6 +18,7 @@ Let's say you have a UFUNCTION you want to improve the UX or make fancier in som
 
 That's where **K2Node_CallFunction** comes in and saves the day with minimal setup!
 
+<a name="create-the-base-class"></a>
 ## Create the base class
 
 Let’s make a base node for all our UK2Node_CallFunction, so we don’t have to add the boilerplate code for each new node:
@@ -42,7 +51,8 @@ void UK2Node_MyBaseNode::GetMenuActions(FBlueprintActionDatabaseRegistrar& Actio
 }
 ``` 
 
-## Start making fancy nodes
+<a name="make-your-first-k2nodecallfunction-node"></a>
+## Make your first K2Node_CallFunction node
 
 Make a new class that inherits from the node base class you just created.
 

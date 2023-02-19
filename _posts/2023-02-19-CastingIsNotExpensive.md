@@ -85,7 +85,7 @@ I'll go over a few different ways you can do to lessen the amount of hard refere
 
 #### Soft References
 
-You can use soft references for any object-type variables on the flip side of hard references. Soft references will not be loaded when the asset is loaded.
+You can use soft references for any object-type variables on the flip side of hard references. Soft references will not be loaded when the asset they referenced is loaded.
 
 ![SoftReferenceVariable](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_06.JPG)
 
@@ -99,7 +99,7 @@ UPROPERTY(EditDefaultsOnly)
 TSoftClassPtr<UMyClass> MySoftClassPointer;
 ``` 
 
-To load soft references you have to load them yourself using nodes such as these: 
+To load soft references, you have to load them yourself using these nodes:
 
 ![AsyncLoadNodes](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_07.JPG)
 

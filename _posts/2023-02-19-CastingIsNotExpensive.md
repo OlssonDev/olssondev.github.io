@@ -12,8 +12,6 @@ title: Understanding why casts can be expensive
     + [Hard reference cost conclusion](#hard-reference-cost-conclusion)
     + [How to avoid hard references](#how-to-avoid-hard-references)
 
-
-
 <a name="introduction"></a>
 ## Introduction 
 

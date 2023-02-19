@@ -36,7 +36,7 @@ Now you might understand why hard references can have severe complications on th
 Large chains of hard references does not only affect the game itself, but the development cycle aswell and will slow down Blueprint compile times, editor startup time, and packaging.
 
 {: .box-warning}
-**Warning:** Hard reference is not directly linked to slower loading, the size map will help you to know if you have just created an expensive hard reference.
+**Warning:** Hard reference is not directly linked to longer load times, the size map will help you to know if you have just created an expensive hard reference.
 
 <a name="size-map"></a>
 ### Size Map

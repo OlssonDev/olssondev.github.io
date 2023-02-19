@@ -126,7 +126,7 @@ For example, I load my static mesh and set it on my **Static Mesh Component**, w
 {: .box-note}
 **Note:** A great use case for soft pointers is to store an equipable item's thumbnail/actor class in soft references.
 
-##### Check class without hard reference
+#### Check class without hard reference
 
 Soft references can also be used when you want to check if an object is of a certain class without creating a hard reference to that class:
 

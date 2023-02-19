@@ -15,7 +15,7 @@ title: Understanding why casts can be expensive
 <a name="introduction"></a>
 ## Introduction 
 
-Almost every day on Youtube, Reddit, Discord and many more social medias, I see people spitting out the infamous words "Casting is expensive", well yes, but no, and I'm gonna tell you why.
+Almost every day on Youtube, Reddit, Discord, and many more social media, I see people spitting out the infamous words “Casting is expensive”, well yes, but no, and I’m gonna tell you why.
 
 But first we have to start on another topic to understand why casting **can** be expensive.
 

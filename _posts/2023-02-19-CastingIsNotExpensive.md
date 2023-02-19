@@ -10,7 +10,7 @@ title: Understanding why casts can be expensive
     + [Size Map](#size-map)
     + [Creating hard references](#creating-hard-references)
     + [Hard reference cost conclusion](#hard-reference-cost-conclusion)
-    + [How to avoid hard references](#how-to-avoid-hard-references)
+    + [How to avoid expensive hard references](#how-to-avoid-expensive-hard-references)
 
 <a name="introduction"></a>
 ## Introduction 
@@ -76,8 +76,8 @@ Also the moment you create a cast node, you create a hard reference to the class
 
 A variable or a node that has a hard reference to a class, has the same cost as a cast node that points to the same class.
 
-<a name="how-to-avoid-hard-references"></a>
-### How to avoid hard references
+<a name="how-to-avoid-expensive-hard-references"></a>
+### How to avoid expensive hard references
 
 You can avoid hard references in many different ways, and sometimes they are needed and no reason to avoid it.
 
@@ -131,7 +131,7 @@ As we've already settled, casts create a hard reference to the class you want to
 
 However, if you cast to a C++ class like Character, Pawn, Actor, or your custom C++ classes, that reference has no overhead since all C++ classes are always loaded into memory.
 
-If you need to cast to a Blueprint, try to limit your casts to a BP parent class that only contains variables, functions, and no references to assets.
+If you need to cast to a Blueprint, try to limit your casts to a BP parent class that only contains variables, functions, and no references to large assets.
 
 #### Interfaces
 

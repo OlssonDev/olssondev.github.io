@@ -47,9 +47,9 @@ Just right click on any asset and click on **""Size Map"**, and you'll get this 
 
 ![SizeMap](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_05.JPG)
 
-Here you can see all the assets that will get loaded with this asset. I've seen in some projects where an asset size map is up to 2GB, which will slow down the loading times.
+Here you can see all the assets that will get loaded with this asset. I've seen in some projects where an asset size map is up to 2GB, which will increase the load times.
 
-Let's take the character again as an example. If the character class that is assigned in the Game Mode has a size map of 3GB, all those 3GB will be loaded at all times while your game is playing.
+Let's retake the character as an example. If the **Character** class assigned in the **Game Mode** has a size map of 3GB, all those 3GB will be loaded at all times while your game is playing.
 
 <a name="creating-hard-references"></a>
 ### Creating hard references

@@ -10,6 +10,7 @@ title: Understanding why casts can be expensive
     + [Size Map](#size-map)
     + [Creating hard references](#creating-hard-references)
     + [Hard reference cost conclusion](#hard-reference-cost-conclusion)
+    + [Avoiding hard references](#avoiding-hard-references)
 
 
 
@@ -47,7 +48,7 @@ Just right click on any asset and click on **""Size Map"**, and you'll get this 
 
 ![SizeMap](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_05.JPG)
 
-Here you can see all the assets that will get loaded along with the loading of this asset. I've seen in some projects where an asset size map is up to 2gb, which will slow down the loading times.
+Here you can see all the assets that will get loaded with this asset. I've seen in some projects where an asset size map is up to 2GB, which will slow down the loading times.
 
 Let's take the character again as an example. If the character class that is assigned in the Game Mode has a size map of 3GB, all those 3GB will be loaded at all times while your game is playing.
 
@@ -75,8 +76,9 @@ Also the moment you create a cast node, you create a hard reference to the class
 <a name="hard-reference-cost-conclusion"></a>
 ### Hard reference cost conclusion
 
-A variable that has a hard reference to a class, has the same cost as a cast that points to the same class.
+A variable or a node that has a hard reference to a class, has the same cost as a cast node that points to the same class.
 
-## Avoid hard reference
+<a name="avoiding-hard-references"></a>
+## Avoiding hard references
 
 **In progress..**

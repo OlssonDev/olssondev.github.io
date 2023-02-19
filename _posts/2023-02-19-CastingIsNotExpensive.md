@@ -16,18 +16,18 @@ title: Understanding why casts can be expensive
 <a name="introduction"></a>
 ## Introduction 
 
-Almost every day on Youtube, Reddit, Discord, and many more social media, I see people spitting out the infamous words “Casting is expensive”, well yes, but no, and I’m gonna tell you why.
+Almost every day on Youtube, Reddit, Discord, and many more social media, I see people spitting out the infamous words “Casting is expensive. Use interfaces!”, well yes, but no, and I’m going to tell you why.
 
-But first we have to start on another topic to understand why casting **can** be expensive.
+But first, we have to start on another topic to understand why casting **can** be expensive.
 
 <a name="hard-references"></a>
 ## Hard References
 
 A hard reference happens when an asset depends upon another asset. Hard reference is the number one reason why casts can be expensive, but they are a one time cost.  
 
-In the Game Mode class, you have assigned your Character, Player Controller, and Player State. Those are all hard references to those classes and will get loaded when Game Mode is loading.
+In the **Game Mode** class, you have assigned your **Character**, **Player Controller**, and **Player State**. Those are all hard references to those classes and will get loaded when **Game Mode** is loading.
 
-For example, when you start your game, the game mode will get loaded. It will also load the assigned Character, Player Controller, and Playerstate, and whatever hard references those classes have, then keep them loaded throughout the whole play session because the Game Mode is always active and holds a hard reference to those classes.
+For example, when you start your game, the **Game Mode** will get loaded. It will also load the assigned classes I mentioned above, and whatever hard references those classes have, then keep them loaded throughout the whole play session because the **Game Mode** is always loaded and holds a hard reference to those classes.
 
 ### The complications of hard references
 

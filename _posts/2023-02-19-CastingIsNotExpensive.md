@@ -155,4 +155,4 @@ A good use case for interfaces (Multiple classes might need to be interactable, 
 
 ## Conclusion
 
-**In progress..** 
+Casting is pretty much a free operation; performance-wise, the only thing cast nodes **can** contribute is longer loading times (due to a large size map) when the Blueprint the cast node is in is getting loaded in runtime and the editor.

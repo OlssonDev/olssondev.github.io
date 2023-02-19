@@ -80,7 +80,7 @@ A variable or a node that has a hard reference to a class, has the same cost as 
 <a name="how-to-avoid-expensive-hard-references"></a>
 ### How to avoid expensive hard references
 
-You can avoid hard references in many different ways, and sometimes they are needed and no reason to avoid it.
+You can avoid hard references in many different ways, and sometimes they are needed and no reason to avoid it (Like a reference to the character's mesh).
 
 I'll go over a few different ways you can do to lessen the amount of hard references.
 

@@ -115,4 +115,4 @@ UAssetManager::GetStreamableManager().RequestAsyncLoad(MySoftClassPointer.ToSoft
 
 The soft references will get unloaded eventually if they're not kept in a hard reference after they've been loaded.
 
-**In progress..**
+**In progress..** 

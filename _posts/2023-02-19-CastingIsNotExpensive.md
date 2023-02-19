@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Understanding why casts can be expensive
+title: Mythbusters: Casting is expensive. Use interfaces!
 ---
 
 # Table of Contents

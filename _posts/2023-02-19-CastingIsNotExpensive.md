@@ -56,9 +56,11 @@ Let's take the character again as an example. If the character class that is ass
 
 #### Hard references for variables
 
-When you assign a value to variables like these (reference, class), you create a hard reference to that class:
+When you make a class variable, you'll create a hard reference to that class, and when you assign a value to it, you'll also create a hard reference to that assigned class.
 
 ![HardReferenceVariable](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_01.JPG)
+
+For example, if you have a generic Actor class variable and assign your custom actor class **"BP_IronOre"**, you'll create a hard reference to **"BP_IronOre"**.
 
 #### Hard references on function nodes
 
@@ -73,7 +75,7 @@ Also the moment you create a cast node, you create a hard reference to the class
 <a name="hard-reference-cost-conclusion"></a>
 ### Hard reference cost conclusion
 
-A variable that creates has a hard reference to a class, has the same cost as a cast that points to the same class.
+A variable that has a hard reference to a class, has the same cost as a cast that points to the same class.
 
 ## Avoid hard reference
 

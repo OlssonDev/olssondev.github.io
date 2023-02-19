@@ -127,4 +127,12 @@ For example, I load my static mesh and set it on my **Static Mesh Component**, w
 
 #### Casting
 
+As we've already settled, casts create a hard reference to the class you want to cast to. 
+
+However, if you cast to a C++ class like Character, Pawn, Actor, or your custom C++ classes, that reference has no overhead since all C++ classes are always loaded into memory.
+
+If you need to cast to a Blueprint, try to limit your casts to a BP parent class that only contains variables, functions, and no references to assets.
+
+#### Interfaces
+
 **In progress..** 

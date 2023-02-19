@@ -85,7 +85,7 @@ I'll go over a few different ways you can do to lessen the amount of hard refere
 
 #### Soft References
 
-You can use soft references for any object-type variables on the flip side of hard references. Soft references will not be loaded when the asset they referenced is loaded.
+You can use soft references for any object-type variables. Soft references will not be loaded when the asset they are referenced by is loaded.
 
 ![SoftReferenceVariable](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_06.JPG)
 

@@ -16,7 +16,7 @@ title: Understanding why casts can be expensive
 <a name="introduction"></a>
 ## Introduction 
 
-Almost every day on Youtube, Reddit, Discord, and many more social media, I see people spitting out the infamous words “Casting is expensive. Use interfaces!”, well yes, but no, and I’m going to tell you why.
+Almost every day on Youtube, Reddit, Discord, and many more social media, I see people saying, “Casting is expensive. Use interfaces!”, well yes, but no, it's a bit more complicated. I’m going to tell you why.
 
 But first, we have to start on another topic to understand why casting **can** be expensive.
 

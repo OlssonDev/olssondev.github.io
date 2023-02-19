@@ -9,9 +9,14 @@ title: Understanding why casts can be expensive
     + [The complications of hard references](#the-complications-of-hard-references)
     + [Size Map](#size-map)
     + [Creating hard references](#creating-hard-references)
+        + [Hard references on variables](#hard-references-on-variables)
+        + [Hard references on function nodes](#hard-references-on-function-nodes)
     + [Hard reference cost conclusion](#hard-reference-cost-conclusion)
     + [How to avoid expensive hard references](#how-to-avoid-expensive-hard-references)
-        + [Test](#test)
+        + [Soft References](#soft-references)
+        + [Check class without hard reference](#check-class-without-hard-reference)
+        + [Casting](#casting)
+        + [Interfaces](#interfaces)
 * [Conclusion](#conclusion)
 
 <a name="introduction"></a>
@@ -55,7 +60,9 @@ Let's retake the character as an example. If the **Character** class assigned in
 <a name="creating-hard-references"></a>
 ### Creating hard references
 
-#### Hard references for variables
+
+<a name="hard-references-on-variables"></a>
+#### Hard references on variables
 
 When you make a class variable, you'll create a hard reference to that class, and when you assign a value to it, you'll also create a hard reference to that assigned class.
 
@@ -63,6 +70,7 @@ When you make a class variable, you'll create a hard reference to that class, an
 
 For example, if you have a generic Actor class variable and assign your custom actor class **"BP_IronOre"**, you'll create a hard reference to **"BP_IronOre"**.
 
+<a name="hard-references-on-function-nodes"></a>
 #### Hard references on function nodes
 
 The same goes for nodes. When you assign a class to a node, you'll also create a hard reference to that class.
@@ -85,6 +93,7 @@ You can avoid hard references in many different ways, and sometimes they are nee
 
 I'll go over a few ways you can reduce the number of hard references.
 
+<a name="soft-references"></a>
 #### Soft References
 
 You can use soft references for any object-type variables. Soft references will not be loaded when the asset they are referenced by is loaded.
@@ -127,6 +136,7 @@ For example, I load my static mesh and set it on my **Static Mesh Component**, w
 {: .box-note}
 **Note:** A great use case for soft pointers is to store an equipable item's thumbnail/actor class in soft references.
 
+<a name="check-class-without-hard-reference"></a>
 #### Check class without hard reference
 
 Soft references can also be used when you want to check if an object is of a certain class without creating a hard reference to that class:
@@ -136,6 +146,7 @@ Soft references can also be used when you want to check if an object is of a cer
 
 The function tries to resolve the soft reference and check it towards the other class. If it fails to resolve the class, it can't be that class because it's not loaded.
 
+<a name="casting"></a>
 #### Casting
 
 As we've already settled, casts create a hard reference to the class you want to cast to. 
@@ -144,6 +155,7 @@ However, if you cast to a C++ class like Character, Pawn, Actor, or your custom 
 
 If you need to cast to a Blueprint class, limit your casts to parent classes that should only contain variables, functions, and no references to large assets.
 
+<a name="interfaces"></a>
 #### Interfaces
 
 Interfaces enable you to communicate with other classes without creating a hard reference unless any of the interface functions have parameters that point to a UAsset.

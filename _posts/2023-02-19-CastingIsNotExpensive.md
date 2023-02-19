@@ -147,7 +147,7 @@ Use interfaces when you want the same call to multiple classes, don't use interf
 
 A bad use case for interfaces (Single implementations of interface functions make no sense. Cast to Game State and add the point):
 
-![UselessInterfaceCall](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_11.JPGw)
+![UselessInterfaceCall](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_11.JPG)
 
 A good use case for interfaces (Multiple classes might need to be interactable, and this is where interfaces shine):
 

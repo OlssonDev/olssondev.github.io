@@ -9,6 +9,7 @@ title: Understanding why casts can be expensive
     + [The complications of hard references](#the-complications-of-hard-references)
     + [Size Map](#size-map)
     + [Creating hard references](#creating-hard-references)
+    + [Hard reference cost conclusion](#hard-reference-cost-conclusion)
 
 
 
@@ -37,6 +38,7 @@ Large chains of hard references does not only affect the game itself, but the de
 {: .box-note}
 **Warning:** Hard reference is not directly linked to slower loading, the size map will help you know if you have just created an expensive hard reference.
 
+<a name="size-map"></a>
 ### Size Map
 
 The size map is an excellent tool in Unreal Engine, which you can see the size of an asset and its hard references.
@@ -49,6 +51,7 @@ Here you can see all the assets that will get loaded along with the loading of t
 
 Let's take the character again as an example. If the character class that is assigned in the Game Mode has a size map of 3GB, all those 3GB will be loaded at all times while your game is playing.
 
+<a name="creating-hard-references"></a>
 ### Creating hard references
 
 #### Hard references for variables
@@ -66,6 +69,11 @@ The same goes for nodes. When you assign a class to a node, you also create a ha
 Also the moment you create a cast node, you create a hard reference to the class you want to cast to.
 
 ![HardReferenceCast](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_04.JPG)
+
+<a name="hard-reference-cost-conclusion"></a>
+### Hard reference cost conclusion
+
+A variable that creates has a hard reference to a class, has the same cost as a cast that points to the same class.
 
 ## Avoid hard reference
 

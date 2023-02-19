@@ -10,7 +10,7 @@ title: Understanding why casts can be expensive
     + [Size Map](#size-map)
     + [Creating hard references](#creating-hard-references)
     + [Hard reference cost conclusion](#hard-reference-cost-conclusion)
-    + [Avoiding hard references](#avoiding-hard-references)
+    + [How to avoid hard references](#how-to-avoid-hard-references)
 
 
 
@@ -37,7 +37,7 @@ Now you might understand why hard references can have severe complications on th
 Large chains of hard references does not only affect the game itself, but the development cycle aswell and will slow down Blueprint compile times, editor startup time, and packaging.
 
 {: .box-warning}
-**Warning:** Hard reference is not directly linked to slower loading, the size map will help you know if you have just created an expensive hard reference.
+**Warning:** Hard reference is not directly linked to slower loading, the size map will help you to know if you have just created an expensive hard reference.
 
 <a name="size-map"></a>
 ### Size Map
@@ -78,7 +78,17 @@ Also the moment you create a cast node, you create a hard reference to the class
 
 A variable or a node that has a hard reference to a class, has the same cost as a cast node that points to the same class.
 
-<a name="avoiding-hard-references"></a>
-## Avoiding hard references
+<a name="how-to-avoid-hard-references"></a>
+### How to avoid hard references
+
+You can avoid hard references in many different ways, and sometimes they are needed and no reason to avoid it.
+
+I'll go over a few different ways you can do to lessen the amount of hard references.
+
+#### Parent Classes
+
+
+
+
 
 **In progress..**

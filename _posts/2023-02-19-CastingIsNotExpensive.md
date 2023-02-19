@@ -64,7 +64,7 @@ For example, if you have a generic Actor class variable and assign your custom a
 
 #### Hard references on function nodes
 
-The same goes for nodes. When you assign a class to a node, you also create a hard reference.
+The same goes for nodes. When you assign a class to a node, you'll also create a hard reference to that class.
 
 ![HardReferenceNode](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_03.JPG)
 

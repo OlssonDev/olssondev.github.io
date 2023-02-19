@@ -28,7 +28,7 @@ A hard reference happens when an asset depends upon another asset. Hard referenc
 
 In the Game Mode class, you have assigned your Character, Player Controller, and Player State. Those are all hard references to those classes and will get loaded when Game Mode is loading.
 
-For example, when you start your game, the game mode will get loaded. It will also load the assigned Character/PlayerController/PlayerState and whatever hard references those classes have, then keep them loaded throughout the whole play session because the Game Mode is always active and holds a hard reference to those classes.
+For example, when you start your game, the game mode will get loaded. It will also load the assigned Character, Player Controller, and Playerstate, and whatever hard references those classes have, then keep them loaded throughout the whole play session because the Game Mode is always active and holds a hard reference to those classes.
 
 ### The complications of hard references
 
@@ -36,7 +36,7 @@ Now you might understand why hard references can have severe complications on th
 
 Large chains of hard references does not only affect the game itself, but the development cycle aswell and will slow down Blueprint compile times, editor startup time, and packaging.
 
-{: .box-note}
+{: .box-warning}
 **Warning:** Hard reference is not directly linked to slower loading, the size map will help you know if you have just created an expensive hard reference.
 
 <a name="size-map"></a>

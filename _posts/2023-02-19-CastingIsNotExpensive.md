@@ -85,18 +85,21 @@ I'll go over a few different ways you can do to lessen the amount of hard refere
 
 #### Soft References
 
-You can use soft references for any object-type variables on the flip side of hard references.
+You can use soft references for any object-type variables on the flip side of hard references. Soft references will not be loaded when the asset is loaded.
 
 ![SoftReferenceVariable](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_06.JPG)
 
 ```javascript
 //How you declare them in C++
 
+UPROPERTY(EditDefaultsOnly)
 TSoftObjectPtr<UMyClass> MySoftObjectPointer;
+
+UPROPERTY(EditDefaultsOnly)
 TSoftClassPtr<UMyClass> MySoftClassPointer;
 ``` 
 
-Soft references will not be loaded when the asset is loaded, you have to load them yourself using nodes such as these: 
+To load soft references you have to load them yourself using nodes such as these: 
 
 ![AsyncLoadNodes](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_07.JPG)
 
@@ -113,6 +116,6 @@ UAssetManager::GetStreamableManager().RequestAsyncLoad(MySoftClassPointer.ToSoft
 UAssetManager::GetStreamableManager().RequestAsyncLoad(MySoftClassPointer.ToSoftObjectPath(), FStreamableDelegate::CreateUObject(this, &ThisClass::OnSoftPointerLoaded));
 ```
 
-The soft references will get unloaded eventually if they're not kept in a hard reference after they've been loaded.
+The class will unload eventually, if they're not kept in a hard reference after they've been loaded.
 
 **In progress..** 

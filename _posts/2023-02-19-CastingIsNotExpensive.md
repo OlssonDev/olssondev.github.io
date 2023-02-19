@@ -87,8 +87,4 @@ I'll go over a few different ways you can do to lessen the amount of hard refere
 
 #### Parent Classes
 
-
-
-
-
 **In progress..**

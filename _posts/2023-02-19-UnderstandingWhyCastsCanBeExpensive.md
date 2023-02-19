@@ -126,6 +126,13 @@ For example, I load my static mesh and set it on my **Static Mesh Component**, w
 {: .box-note}
 **Note:** A great use case for soft pointers is to store an equipable item's thumbnail/actor class in soft references.
 
+Soft references can also be used when you want to check if an object is of a certain class without creating a hard reference to that class:
+
+![OverlapCheckClass](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_12.JPG)
+![CheckClassFunction](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_13.JPG)
+
+The function tries to resolve the soft reference and check it towards the other class. If it fails to resolve the class, it can't be that class because it's not loaded.
+
 #### Casting
 
 As we've already settled, casts create a hard reference to the class you want to cast to. 

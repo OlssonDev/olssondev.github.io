@@ -131,8 +131,25 @@ As we've already settled, casts create a hard reference to the class you want to
 
 However, if you cast to a C++ class like Character, Pawn, Actor, or your custom C++ classes, that reference has no overhead since all C++ classes are always loaded into memory.
 
-If you need to cast to a Blueprint, try to limit your casts to a BP parent class that only contains variables, functions, and no references to large assets.
+If you need to cast to a Blueprint class, try to limit your casts to a parent classes that should only contain variables, functions, and no references to large assets.
 
 #### Interfaces
+
+Interfaces enable you to communicate with other classes without creating a hard reference unless any of the interface functions have parameters that point to a UAsset.
+
+{: .box-note}
+**Note:** Interfaces **don't** replace casts!
+
+Interfaces are great for interaction systems or getting a certain component from an Actor to use in a system (Gameplay Ability System (GAS) does this). 
+
+Use interfaces when you want the same call to multiple classes, don't use interfaces if you need one implementation of the function, just cast it. It's easier to read and debug.
+
+Bad use case for interfaces:
+
+![UselessInterfaceCall](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_09.JPG)
+
+Good use case for interfaces:
+
+![UselessInterfaceCall](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_10.JPG)
 
 **In progress..** 

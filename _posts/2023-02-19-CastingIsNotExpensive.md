@@ -116,10 +116,15 @@ UAssetManager::GetStreamableManager().RequestAsyncLoad(MySoftClassPointer.ToSoft
 UAssetManager::GetStreamableManager().RequestAsyncLoad(MySoftClassPointer.ToSoftObjectPath(), FStreamableDelegate::CreateUObject(this, &ThisClass::OnSoftPointerLoaded));
 ```
 
-However, the class will unload eventually, if they're not kept in a hard reference after they've been loaded.
+However, the class will unload eventually, if they're not kept as a hard reference after they've been loaded.
 
 For example, I load my static mesh and set it on my **Static Mesh Component**, which holds a hard reference to the static mesh it displays so it won't be unloaded.
 
 ![HardReferenceUnload](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_08.JPG)
+
+{: .box-note}
+**Note:** A great use case for soft pointers is to store an equipable item's thumbnail/actor class in soft references.
+
+#### Casting
 
 **In progress..** 

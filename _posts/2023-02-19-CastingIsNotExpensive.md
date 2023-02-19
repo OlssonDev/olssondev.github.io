@@ -113,6 +113,6 @@ UAssetManager::GetStreamableManager().RequestAsyncLoad(MySoftClassPointer.ToSoft
 UAssetManager::GetStreamableManager().RequestAsyncLoad(MySoftClassPointer.ToSoftObjectPath(), FStreamableDelegate::CreateUObject(this, &ThisClass::OnSoftPointerLoaded));
 ```
 
-These will get unloaded eventually if they're not kept in a hard reference after they've been loaded.
+The soft references will get unloaded eventually if they're not kept in a hard reference after they've been loaded.
 
 **In progress..**

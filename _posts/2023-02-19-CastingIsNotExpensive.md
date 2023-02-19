@@ -80,9 +80,9 @@ A variable or a node that has a hard reference to a class, has the same cost as 
 <a name="how-to-avoid-expensive-hard-references"></a>
 ### How to avoid expensive hard references
 
-You can avoid hard references in many different ways, and sometimes they are needed and no reason to avoid it (Like a reference to the character's mesh).
+You can avoid hard references in many different ways, and sometimes they are needed, and no reason to avoid them (Like a reference to the character's mesh).
 
-I'll go over a few different ways you can do to lessen the amount of hard references.
+I'll go over a few ways you can reduce the number of hard references.
 
 #### Soft References
 
@@ -132,7 +132,7 @@ As we've already settled, casts create a hard reference to the class you want to
 
 However, if you cast to a C++ class like Character, Pawn, Actor, or your custom C++ classes, that reference has no overhead since all C++ classes are always loaded into memory.
 
-If you need to cast to a Blueprint class, try to limit your casts to a parent classes that should only contain variables, functions, and no references to large assets.
+If you need to cast to a Blueprint class, limit your casts to parent classes that should only contain variables, functions, and no references to large assets.
 
 #### Interfaces
 

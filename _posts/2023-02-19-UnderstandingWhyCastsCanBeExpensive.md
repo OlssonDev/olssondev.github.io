@@ -100,9 +100,6 @@ Here are a few ways to reduce the number of hard references:
 
 Soft references will not be force loaded and must be loaded on demand from your BP/code. You can use soft references for any object-type variables.
 
-{: .box-note}
-**Note:** Once loaded, soft references act like weak pointers.
-
 ![SoftReferenceVariable](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_06.JPG)
 
 ```javascript
@@ -132,7 +129,7 @@ UAssetManager::GetStreamableManager().RequestAsyncLoad(MySoftClassPointer.ToSoft
 UAssetManager::GetStreamableManager().RequestAsyncLoad(MySoftClassPointer.ToSoftObjectPath(), FStreamableDelegate::CreateUObject(this, &ThisClass::OnSoftPointerLoaded));
 ```
 
-Since the soft references act like weak pointers once loaded, the class will unload eventually. So if you want to keep an asset loaded, you need to store it as a hard reference.
+Since the soft references act like weak pointers once loaded, the asset will unload eventually. So if you want to keep an asset loaded, you need to store it as a hard reference.
 
 For example, I load my static mesh and set it on my **Static Mesh Component**, which holds a hard reference to the static mesh it displays so it won't be unloaded.
 

@@ -84,19 +84,24 @@ Also the moment you create a cast node, you create a hard reference to the class
 <a name="hard-reference-cost-conclusion"></a>
 ### Hard reference cost conclusion
 
-A variable or a node that has a hard reference to a class, has the same cost as a cast node that points to the same class.
+Any hard reference has the same cost, if they're all pointing to the same class. 
+
+A class variable and a cast node both pointing to **BP_MyActor** both have the same overhead.
 
 <a name="how-to-avoid-expensive-hard-references"></a>
 ### How to avoid expensive hard references
 
 You can avoid hard references in many different ways, and sometimes they are needed, and no reason to avoid them (Like a reference to the character's mesh).
 
-I'll go over a few ways you can reduce the number of hard references.
+Here are a few ways to reduce the number of hard references:
 
 <a name="soft-references"></a>
 #### Soft References
 
-You can use soft references for any object-type variables. Soft references will not be loaded when the asset they are referenced by is loaded.
+Soft references will not be force loaded and must be loaded on demand from your BP/code. You can use soft references for any object-type variables.
+
+{: .box-note}
+**Note:** Once loaded, soft references act like weak pointers.
 
 ![SoftReferenceVariable](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_06.JPG)
 
@@ -110,7 +115,7 @@ UPROPERTY(EditDefaultsOnly)
 TSoftClassPtr<UMyClass> MySoftClassPointer;
 ``` 
 
-To load soft references, you have to load them yourself using these nodes:
+To load soft references, you need to use these nodes/functions:
 
 ![AsyncLoadNodes](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_07.JPG)
 
@@ -127,7 +132,7 @@ UAssetManager::GetStreamableManager().RequestAsyncLoad(MySoftClassPointer.ToSoft
 UAssetManager::GetStreamableManager().RequestAsyncLoad(MySoftClassPointer.ToSoftObjectPath(), FStreamableDelegate::CreateUObject(this, &ThisClass::OnSoftPointerLoaded));
 ```
 
-However, the class will unload eventually, if they're not kept as a hard reference after they've been loaded.
+Since the soft references act like weak pointers once loaded, the class will unload eventually. So if you want to keep an asset loaded, you need to store it as a hard reference.
 
 For example, I load my static mesh and set it on my **Static Mesh Component**, which holds a hard reference to the static mesh it displays so it won't be unloaded.
 

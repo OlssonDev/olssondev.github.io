@@ -113,7 +113,7 @@ If true, summons a class picker when you click to create a new class in the cate
 
 You might not want the default asset name/tooltip to be displayed when hovered, and that is an easy fix.
 
-Go into the asset and click on Class Settings and this should show up:
+Go into the class you have exposed with the Asset Action and click on Class Settings, and this should show up:
 
 ![OldNameTooltipImage](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/8ec02df69d183ad6865bcba1cc2bc4795d4a2fc2/assets/img/EasyAssetCreator/Image_13.JPG)
 

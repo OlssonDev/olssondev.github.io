@@ -27,7 +27,7 @@ Asset Action is the core of Easy Asset Creator and it handles how your class is 
 You need one Asset Action for each asset you want to expose.
 
 <a name="create-an-asset-action"></a>
-## Create an Asset Action
+### Create an Asset Action
 
 Start by right clicking in your content browser/drawer to create an **Asset Action**.
 
@@ -43,7 +43,7 @@ Now you have your first Asset Action class ready!
 **Fun fact:** The **Asset Action** and **Asset Factory** entries in the Easy Asset Creator category are exposed via custom Asset Action classes in C++.
 
 <a name="setting-up-your-asset-action"></a>
-## Setting up your Asset Action
+### Setting up your Asset Action
 
 Open the Asset Action and go to the Class Defaults menu:
 
@@ -68,7 +68,7 @@ Now you are all done for the basic setup of an Asset Action!
 Factories are responsible for creating the actual asset and give it its name. Due to current engine "limitations", you unfortunately need both classes to expose your assets.
 
 <a name="create-an-asset-factory"></a>
-## Create  Asset Factory
+### Create  Asset Factory
 
 Start by right clicking in your content browser/drawer to create an **Asset Factory**.
 
@@ -77,7 +77,7 @@ Start by right clicking in your content browser/drawer to create an **Asset Fact
 Now you have your first Asset Factory class ready!
 
 <a name="setting-up-your-asset-factory"></a>
-## Setting up your Asset Factory
+### Setting up your Asset Factory
 
 Open the Asset Factory and go to the Class Defaults menu:
 

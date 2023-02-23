@@ -113,7 +113,7 @@ If true, summons a class picker when you click to create a new class in the cate
 
 You might not want the default asset name/tooltip to be displayed when hovered, and that is an easy fix.
 
-Go into the class you have exposed with the Asset Action and click on Class Settings, and this should show up:
+Go into the class you have exposed with the **Asset Action** and click on Class Settings, and this should show up:
 
 ![OldNameTooltipImage](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/8ec02df69d183ad6865bcba1cc2bc4795d4a2fc2/assets/img/EasyAssetCreator/Image_13.JPG)
 
@@ -126,7 +126,7 @@ Now your asset should be displayed with the new name and tooltip:
 <a name="asset-color"></a>
 ### Asset Color
 
-To change the color of the Asset in the menu, go into your Asset Action and change the color under **Asset Color**
+To change the color of the class in the menu, go into your **Asset Action** and change the color under **Asset Color**
 
 {: .box-note}
 **Note:** This will **not** change color of the asset once its created due to engine back-end stuff.

@@ -12,6 +12,8 @@ title: Easy Asset Creator Documentation
     + [Create an Asset Factory](#create-an-asset-factory)
 	+ [Setting up your Asset Factory](#setting-up-your-asset-factory)
 * [Asset Appearance](#asset-appearance)
+    + [Asset name & tooltipy](#asset-name-tooltip)
+	+ [Asset Color](#asset-color)
 * [Asset Action Fragments](#asset-action-fragments)
 
 <a name="plugin-overview"></a>
@@ -106,7 +108,8 @@ If true, summons a class picker when you click to create a new class in the cate
 <a name="asset-appearance"></a>
 ## Asset appearance
 
-#### Asset name & tooltip
+<a name="asset-name-tooltip"></a>
+### Asset name & tooltip
 
 You might not want the default asset name/tooltip to be displayed when hovered, and that is an easy fix.
 
@@ -120,7 +123,8 @@ Now your asset should be displayed with the new name and tooltip:
 
 ![NewNameTooltipImage](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_14.JPG)
 
-#### Asset Color
+<a name="asset-color"></a>
+### Asset Color
 
 To change the color of the Asset in the menu, go into your Asset Action and change the color under **Asset Color**
 

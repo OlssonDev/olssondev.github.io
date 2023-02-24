@@ -182,4 +182,4 @@ A good use case for interfaces (Multiple classes might need to be interactable, 
 
 Casting is a quick operation, performance-wise. The only thing cast nodes **can** contribute to is longer loading times (due to hard references that can contribute to large size maps) which is a one-time cost when the class loads into memory.
 
-It's usually the fault of a bad project structure and improper use of SoftObject and SoftClass pointers, that makes casts "expensive".
+It's usually the fault of a bad project structure and improper use of SoftObject and SoftClass pointers, that causes casts to be "expensive".

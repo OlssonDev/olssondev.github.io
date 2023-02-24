@@ -17,7 +17,7 @@ title: Understanding why casts can be expensive
         + [Check class without hard reference](#check-class-without-hard-reference)
         + [Casting](#casting)
         + [Interfaces](#interfaces)
-* [Conclusion](#conclusion)
+* [Conclusion](#conclusion-casting-is-not-bad)
 
 <a name="introduction"></a>
 ## Introduction 
@@ -177,6 +177,9 @@ A good use case for interfaces (Multiple classes might need to be interactable, 
 
 ![GreatInterfaceCall](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_10.JPG)
 
+<a name="conclusion-casting-is-not-bad"></a>
 ## Conclusion: Casting is not bad
 
 Casting is a quick operation, performance-wise. The only thing cast nodes **can** contribute to is longer loading times (due to hard references that can contribute to large size maps) which is a one-time cost when the class loads into memory.
+
+It's usually the fault of a bad project structure and improper use of SoftObject and SoftClass pointers, that makes casts "expensive".

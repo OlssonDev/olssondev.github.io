@@ -5,7 +5,7 @@ title: Understanding why casting can be expensive in Blueprint
 
 # Table of Contents
 * [Introduction](#introduction)
-+ [Hard References](#hard-references)
++ [Hard references](#hard-references)
     + [The complications of hard references](#the-complications-of-hard-references)
     + [Size Map](#size-map)
     + [Creating hard references](#creating-hard-references)
@@ -13,7 +13,7 @@ title: Understanding why casting can be expensive in Blueprint
         + [Hard references on function nodes](#hard-references-on-function-nodes)
     + [Hard reference cost conclusion](#hard-reference-cost-conclusion)
     + [How to avoid expensive hard references](#how-to-avoid-expensive-hard-references)
-        + [Soft References](#soft-references)
+        + [Soft references](#soft-references)
         + [Check class without hard reference](#check-class-without-hard-reference)
         + [Casting](#casting)
         + [Interfaces](#interfaces)
@@ -27,7 +27,7 @@ Almost every day on Youtube, Reddit, Discord, and many more social media, I see 
 But first, we have to start on another topic to understand why casting **can** be expensive.
 
 <a name="hard-references"></a>
-## Hard References
+## Hard references
 
 A hard reference happens when an asset depends upon another asset. Hard reference is the number one reason casts can be expensive, but they are a one-time cost.  
 
@@ -96,7 +96,7 @@ You can avoid hard references in many different ways, and sometimes they are nee
 Here are a few ways to reduce the number of hard references:
 
 <a name="soft-references"></a>
-#### Soft References
+#### Soft references
 
 Soft references will not be force loaded and must be loaded on demand from your BP/code. You can use soft references for any object-type variables.
 

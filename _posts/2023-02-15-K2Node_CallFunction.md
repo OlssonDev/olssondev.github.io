@@ -3,11 +3,6 @@ layout: post
 title: Make UFUNCTIONs fancier, and fast with K2Node_CallFunction
 ---
 
-# Table of Contents
-* [Introduction to K2Node_CallFunction](#introduction-to-k2nodecallfunction)
-* [Create the base class](#create-the-base-class)
-* [Make your first K2Node_CallFunction node](#make-your-first-k2nodecallfunction-node)
-
 <a name="introduction-to-k2nodecallfunction"></a>
 ## Introduction to K2Node_CallFunction
 
@@ -17,6 +12,11 @@ title: Make UFUNCTIONs fancier, and fast with K2Node_CallFunction
 Let's say you have a UFUNCTION you want to improve the UX or make fancier in some way but don't have the time or energy to set up a K2Node from scratch.
 
 That's where **K2Node_CallFunction** comes in and saves the day with minimal setup!
+
+# Table of Contents
+* [Introduction to K2Node_CallFunction](#introduction-to-k2nodecallfunction)
+* [Create the base class](#create-the-base-class)
+* [Make your first K2Node_CallFunction node](#make-your-first-k2nodecallfunction-node)
 
 <a name="create-the-base-class"></a>
 ## Create the base class

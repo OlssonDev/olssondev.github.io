@@ -17,7 +17,7 @@ title: Understanding why casts can be expensive
         + [Check class without hard reference](#check-class-without-hard-reference)
         + [Casting](#casting)
         + [Interfaces](#interfaces)
-* [Conclusion](#conclusion-casting-is-not-bad)
+* [Conclusion: Casting is not bad](#conclusion-casting-is-not-bad)
 
 <a name="introduction"></a>
 ## Introduction 

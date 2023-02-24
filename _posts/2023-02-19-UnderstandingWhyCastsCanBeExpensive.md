@@ -162,8 +162,8 @@ If you need to cast to a Blueprint class, limit your casts to parent classes tha
 
 Interfaces enable you to communicate with other classes without creating a hard reference unless any of the interface functions have parameters that point to a UAsset.
 
-{: .box-note}
-**Note:** Interfaces **don't** replace casts!
+{: .box-warning}
+**Warning:** Interfaces **don't** replace casts!
 
 Interfaces are great for interaction systems or getting a certain component from an Actor to use in a system (Gameplay Ability System (GAS) does this). 
 
@@ -179,4 +179,4 @@ A good use case for interfaces (Multiple classes might need to be interactable, 
 
 ## Conclusion
 
-Casting is pretty much a free operation; performance-wise, the only thing cast nodes **can** contribute is longer loading times (due to a large size map) when the Blueprint the cast node is in is getting loaded in runtime and the editor.
+Casting is pretty much a free operation; performance-wise, the only thing cast nodes **can** contribute is longer loading times (due to a large size map) which is a one-time cost.

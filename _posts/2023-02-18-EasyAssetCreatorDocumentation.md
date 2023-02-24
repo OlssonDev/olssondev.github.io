@@ -3,11 +3,6 @@ layout: post
 title: Easy Asset Creator Documentation
 ---
 
-<a name="plugin-overview"></a>
-## Plugin Overview 
-
-Making editor tools for creating and placing assets is a tedious and time consuming process, and usually requires C++ to set up. Easy Asset Creator makes it easy to create tools for your assets, and all of it can be managed inside the editor with no requirements for an editor restart.
-
 # Table of Contents
 * [Plugin Overview](#plugin-overview)
 + [Asset Action](#asset-action)
@@ -20,6 +15,11 @@ Making editor tools for creating and placing assets is a tedious and time consum
     + [Asset name & tooltipy](#asset-name-tooltip)
 	+ [Asset Color](#asset-color)
 * [Asset Action Fragments](#asset-action-fragments)
+
+<a name="plugin-overview"></a>
+## Plugin Overview 
+
+Making editor tools for creating and placing assets is a tedious and time consuming process, and usually requires C++ to set up. Easy Asset Creator makes it easy to create tools for your assets, and all of it can be managed inside the editor with no requirements for an editor restart.
 
 <a name="asset-action"></a>
 ## Asset Action

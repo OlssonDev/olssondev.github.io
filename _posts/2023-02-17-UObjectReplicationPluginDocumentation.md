@@ -6,13 +6,6 @@ toc: true
 
 [Marketplace Page](https://www.unrealengine.com/marketplace/en-US/product/34834b25f9b94125a015342fb3fae218){:target="_blank"}
 
-<a name="plugin-overview"></a>
-## Plugin Overview 
-
-In Unreal Engine, two main classes are used for replication, Actors and Actor Components. With just a simple checkbox away, you’re up and running with replicating those classes.
-
-But that is not the case with UObjects. They require C++ to set up replication, which this plugin will help you with.
-
 # Table of Contents
 * [Plugin Overview](#plugin-overview)
 * [Create a Replicated UObject](#create-a-replicated-uobject)
@@ -24,6 +17,13 @@ But that is not the case with UObjects. They require C++ to set up replication, 
 * [Custom UObject Replication Managers](#custom-uobject-replication-managers)
 * [Setup your new UObject Replication Manager](#setup-your-new-uobject-replication-manager)
 * [Common Issues](#common-issues)
+
+<a name="plugin-overview"></a>
+## Plugin Overview 
+
+In Unreal Engine, two main classes are used for replication, Actors and Actor Components. With just a simple checkbox away, you’re up and running with replicating those classes.
+
+But that is not the case with UObjects. They require C++ to set up replication, which this plugin will help you with.
 
 {: .box-note}
 **Note:** The documentation will not cover how multiplayer in Unreal Engine works, just how UObject replication works at a high level. The documentation expects you to have some knowledge about replication already. If you’re new to networking, here is an excellent resource about multiplayer in Unreal Engine: [UE Network Compendium](https://cedric-neukirchen.net/Downloads/Compendium/UE4_Network_Compendium_by_Cedric_eXi_Neukirchen.pdf){:target="_blank"}.

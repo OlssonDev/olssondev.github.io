@@ -177,6 +177,6 @@ A good use case for interfaces (Multiple classes might need to be interactable, 
 
 ![GreatInterfaceCall](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_10.JPG)
 
-## Conclusion
+## Conclusion: Casting is not bad
 
-Casting is pretty much a free operation; performance-wise, the only thing cast nodes **can** contribute is longer loading times (due to a large size map) which is a one-time cost.
+Casting is pretty much a free operation; performance-wise, the only thing cast nodes **can** contribute is longer loading times (due to hard references that can contribute to a large size maps) which is a one-time cost.

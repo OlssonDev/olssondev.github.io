@@ -160,7 +160,7 @@ If you need to cast to a Blueprint class, limit your casts to parent classes tha
 <a name="interfaces"></a>
 #### Interfaces
 
-Interfaces enable you to communicate with other classes without creating a hard reference unless any of the interface functions have parameters that point to a UAsset.
+Interfaces enable you to communicate with other classes without creating a hard reference unless any interface functions have parameters pointing to an asset.
 
 {: .box-warning}
 **Warning:** Interfaces **don't** replace casts!

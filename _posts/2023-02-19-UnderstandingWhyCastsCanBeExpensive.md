@@ -179,4 +179,4 @@ A good use case for interfaces (Multiple classes might need to be interactable, 
 
 ## Conclusion: Casting is not bad
 
-Casting is pretty much a free operation; performance-wise, the only thing cast nodes **can** contribute is longer loading times (due to hard references that can contribute to a large size maps) which is a one-time cost.
+Casting is a quick operation; performance-wise, the only thing cast nodes **can** contribute is longer loading times (due to hard references that can contribute to large size maps) which is a one-time cost when the class loads into memory.

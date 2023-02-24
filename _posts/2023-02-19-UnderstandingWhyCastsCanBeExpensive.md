@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Understanding why casts can be expensive
+title: Understanding why casting can be expensive in Blueprint
 ---
 
 # Table of Contents

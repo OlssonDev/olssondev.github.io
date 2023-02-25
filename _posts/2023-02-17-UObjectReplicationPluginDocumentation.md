@@ -16,7 +16,11 @@ toc: true
     + [Unregister UObjects from replication](#unregister-uobjects-from-replication)
     + [Custom UObject Replication Managers](#custom-uobject-replication-managers)
         + [Setup your new UObject Replication Manager](#setup-your-new-uobject-replication-manager)
-* [Common Issues](#common-issues)
++ [Common Issues](#common-issues)
+    + [My Replicated UObjects are not replicating](#my-replicated-uobjects-are-not-replicating)
+    + [My Replicated UObjects don’t get destroyed](#my-replicated-uobjects-dont-get-destroyed)
+    + [I can’t see the UObject Replication category in the content browser](#i-cant-see-the-uobject-replication-category)
+    + [My replicated UObjects are replicating slowly](#my-replicated-uobjects-are-replicating-slowly)
 
 <a name="plugin-overview"></a>
 ## Plugin Overview 
@@ -142,18 +146,22 @@ The functions from earlier are now callable in your custom UObject Replication M
 <a name="#common-issues"></a>
 ## Common Issues 
 
+<a name="#my-replicated-uobjects-are-not-replicating"></a>
 #### My Replicated UObjects are not replicating
 
 Make sure that the Actor you’re replicating from is set to **Replicates**, the UObject Replication Manager component is set to **Component Replicates**, and your variable/array is set to **Replicate/RepNotify**, and that you create/destroy Replicated UObjects on the **server**.
 
+<a name="#my-replicated-uobjects-dont-get-destroyed"></a>
 #### My Replicated UObjects don’t get destroyed
 
 Make sure you ONLY destroy Replicated UObjects on the server.
 
+<a name="#i-cant-see-the-uobject-replication-category"></a>
 #### I can’t see the UObject Replication category in the content browser
 
 Make sure the plugin is installed on the correct engine version, and the plugin is set to be enabled.
 
+<a name="#my-replicated-uobjects-are-replicating-slowly"></a>
 #### My replicated UObjects are replicating slowly
 
 Check the Actor with the UObject Replication Manager that the **Net Update Frequency** is reasonable. The default for Actors is 100.

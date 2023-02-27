@@ -14,7 +14,9 @@ title: Easy Asset Creator Documentation
 * [Asset Appearance](#asset-appearance)
     + [Asset name & tooltipy](#asset-name-tooltip)
 	+ [Asset Color](#asset-color)
-* [Asset Action Fragments](#asset-action-fragments)
++ [Asset Action Fragments](#asset-action-fragments)
+    + [Add to Place Actors menu](#add-to-place-actors-menu)
+    + [Add Content Browser drag drop support](#add-content-browser-drag-drop-support)
 
 <a name="plugin-overview"></a>
 ## Plugin Overview 
@@ -142,7 +144,8 @@ Now your asset will appear in a different color:
 
 Fragments are used in Asset Actions to add different functionalities to the asset in the editor.
 
-### Add To Place Actors Menu
+<a name="add-to-place-actors-menu"></a>
+### Add to Place Actors Menu
 
 ![PlaceActorsMenu](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_22.JPG)
 
@@ -155,6 +158,7 @@ Now your Actor should be registered to the menu in its category!
 {: .box-note}
 **Note:** You don't need a factory to add this functionality to an asset. Just need an **Asset Action** with a valid asset class assigned, category, and this fragment.
 
-### Add Content Browser Drag Drop Support
+<a name="add-content-browser-drag-drop-support"></a>
+### Add Content Browser drag drop support
 
 **In progress...**

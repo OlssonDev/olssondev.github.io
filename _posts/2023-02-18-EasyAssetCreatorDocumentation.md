@@ -165,7 +165,7 @@ Drag any of your assets into the viewport from the content browser. Works with a
 
 Add the drag drop support fragment to the Asset Action:
 
-![DragDropSupportFragment](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/EasyAssetCreator_05.JPG)
+![DragDropSupportFragment](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_25.JPG)
 
 Add custom functionality to what will happen when the asset has been dragged into the viewport. Just override the function **PostSpawnActor** in the Asset Action.
 

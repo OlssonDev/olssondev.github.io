@@ -8,7 +8,7 @@ title: Easy Asset Creator Documentation
 + [Asset Action](#asset-action)
     + [Create an Asset Action](#create-an-asset-action)
     + [Setting up your Asset Action](#setting-up-your-asset-action)
-        + [Sub-menus](#sub-menus)
+        + [Sub-category](#sub-category)
 * [Asset Factory](#asset-factory)
     + [Create an Asset Factory](#create-an-asset-factory)
 	+ [Setting up your Asset Factory](#setting-up-your-asset-factory)
@@ -65,10 +65,10 @@ Now assign the category this asset should be exposed to in the different menus:
 
 Now you are all done for the basic setup of an Asset Action!
 
-<a name="sub-menus"></a>
-#### Sub-menus
+<a name="sub-category"></a>
+#### Sub-category
 
-You can only add a sub-menu if two or more classes are in the same category. Then assign the sub-menu to one of them, and you will get this:
+You can only add a sub-category if two or more classes are in the same category. Then assign a sub-category name to one of them, and you will get this:
 
 ![Sub-menus](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_27.JPG)
 

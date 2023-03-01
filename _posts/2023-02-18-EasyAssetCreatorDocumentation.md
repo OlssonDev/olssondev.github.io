@@ -17,6 +17,7 @@ title: Easy Asset Creator Documentation
 + [Asset Action Fragments](#asset-action-fragments)
     + [Add to Place Actors menu](#add-to-place-actors-menu)
     + [Add Content Browser drag drop support](#add-content-browser-drag-drop-support)
+* [Deleting Assets](#deleting-assets)
 
 <a name="plugin-overview"></a>
 ## Plugin Overview 
@@ -176,3 +177,10 @@ In the example below, we drag a quest into the viewport, the Asset Action spawns
 Now the asset should behave like this:
 
 ![DragDropGif](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/DragDropGif.gif)
+
+<a name="deleting-assets"></a>
+## Deleting Assets
+
+You can delete any Asset Action or Asset Factories without any dangerous impact. It might say it still has memory references left and you have to force delete the asset, but the plugin handles that.
+
+[DeleteAssetPic](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_26.JPG)

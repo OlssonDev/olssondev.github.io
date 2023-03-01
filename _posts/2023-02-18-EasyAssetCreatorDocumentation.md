@@ -183,4 +183,4 @@ Now the asset should behave like this:
 
 You can delete any Asset Action or Asset Factories without any dangerous impact. It might say it still has memory references left and you have to force delete the asset, but the plugin handles that.
 
-[DeleteAssetPic](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_26.JPG)
+![DeleteAssetPic](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_26.JPG)

@@ -12,7 +12,7 @@ title: Easy Asset Creator Documentation
     + [Create an Asset Factory](#create-an-asset-factory)
 	+ [Setting up your Asset Factory](#setting-up-your-asset-factory)
 * [Asset Appearance](#asset-appearance)
-    + [Asset name & tooltipy](#asset-name-tooltip)
+    + [Asset name & tooltip](#asset-name-tooltip)
 	+ [Asset Color](#asset-color)
 + [Asset Action Fragments](#asset-action-fragments)
     + [Add to Place Actors menu](#add-to-place-actors-menu)

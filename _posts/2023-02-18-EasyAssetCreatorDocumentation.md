@@ -161,4 +161,18 @@ Now your Actor should be registered to the menu in its category!
 <a name="add-content-browser-drag-drop-support"></a>
 ### Add Content Browser drag drop support
 
-**In progress...**
+Drag any of your assets into the viewport from the content browser. Works with any assets that derive from UObject.
+
+Add the drag drop support fragment to the Asset Action:
+
+![DragDropSupportFragment](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/EasyAssetCreator_05.JPG)
+
+Add custom functionality to what will happen when the asset has been dragged into the viewport. Just override the function **PostSpawnActor** in the Asset Action.
+
+In the example below, we drag a quest into the viewport, spawn a quest start trigger actor, and then add the quest class to that quest trigger.
+
+![DragDropSupportFragment](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/EasyAssetCreator_04.JPG)
+
+Now the asset should behave like this:
+
+![DragDropGif](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/DragDropGif.gif)

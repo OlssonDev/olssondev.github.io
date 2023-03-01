@@ -169,7 +169,7 @@ Add the drag drop support fragment to the Asset Action:
 
 Add custom functionality to what will happen when the asset has been dragged into the viewport. Just override the function **PostSpawnActor** in the Asset Action.
 
-In the example below, we drag a quest into the viewport, spawn a quest start trigger actor, and then add the quest class to that quest trigger.
+In the example below, we drag a quest into the viewport, the Asset Action spawns the quest trigger we assigned, and then assign the quest class to that quest trigger.
 
 ![DragDropSupportFragment](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/EasyAssetCreator_04.JPG)
 

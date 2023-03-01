@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Understanding why casts can be expensive
+title: Understanding why casting can be expensive in Blueprint
 ---
 
 # Table of Contents
 * [Introduction](#introduction)
-+ [Hard References](#hard-references)
++ [Hard references](#hard-references)
     + [The complications of hard references](#the-complications-of-hard-references)
     + [Size Map](#size-map)
     + [Creating hard references](#creating-hard-references)
@@ -13,11 +13,11 @@ title: Understanding why casts can be expensive
         + [Hard references on function nodes](#hard-references-on-function-nodes)
     + [Hard reference cost conclusion](#hard-reference-cost-conclusion)
     + [How to avoid expensive hard references](#how-to-avoid-expensive-hard-references)
-        + [Soft References](#soft-references)
+        + [Soft references](#soft-references)
         + [Check class without hard reference](#check-class-without-hard-reference)
         + [Casting](#casting)
         + [Interfaces](#interfaces)
-* [Conclusion](#conclusion)
+* [Conclusion: Casting is not bad](#conclusion-casting-is-not-bad)
 
 <a name="introduction"></a>
 ## Introduction 
@@ -27,7 +27,7 @@ Almost every day on Youtube, Reddit, Discord, and many more social media, I see 
 But first, we have to start on another topic to understand why casting **can** be expensive.
 
 <a name="hard-references"></a>
-## Hard References
+## Hard references
 
 A hard reference happens when an asset depends upon another asset. Hard reference is the number one reason casts can be expensive, but they are a one-time cost.  
 
@@ -96,7 +96,7 @@ You can avoid hard references in many different ways, and sometimes they are nee
 Here are a few ways to reduce the number of hard references:
 
 <a name="soft-references"></a>
-#### Soft References
+#### Soft references
 
 Soft references will not be force loaded and must be loaded on demand from your BP/code. You can use soft references for any object-type variables.
 
@@ -160,16 +160,16 @@ If you need to cast to a Blueprint class, limit your casts to parent classes tha
 <a name="interfaces"></a>
 #### Interfaces
 
-Interfaces enable you to communicate with other classes without creating a hard reference unless any of the interface functions have parameters that point to a UAsset.
+Interfaces enable you to communicate with other classes without creating a hard reference unless any interface functions have parameters pointing to an asset.
 
-{: .box-note}
-**Note:** Interfaces **don't** replace casts!
+{: .box-warning}
+**Warning:** Interfaces **don't** replace casts!
 
 Interfaces are great for interaction systems or getting a certain component from an Actor to use in a system (Gameplay Ability System (GAS) does this). 
 
 Use interfaces when you want the same call to multiple classes, don't use interfaces if you need one implementation of the function, just cast it. It's easier to read and debug.
 
-A bad use case for interfaces (Single implementations of interface functions make no sense. Cast to Game State and add the point):
+A bad use case for interfaces (Single implementations of interface functions make no sense. Cast to Game State and add the points instead):
 
 ![UselessInterfaceCall](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_11.JPG)
 
@@ -177,6 +177,9 @@ A good use case for interfaces (Multiple classes might need to be interactable, 
 
 ![GreatInterfaceCall](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/Casting/Image_10.JPG)
 
-## Conclusion
+<a name="conclusion-casting-is-not-bad"></a>
+## Conclusion: Casting is not bad
 
-Casting is pretty much a free operation; performance-wise, the only thing cast nodes **can** contribute is longer loading times (due to a large size map) when the Blueprint the cast node is in is getting loaded in runtime and the editor.
+Casting is a quick operation, performance-wise. The only thing cast nodes **can** contribute to is longer loading times (due to hard references that can contribute to large size maps) which is a one-time cost when the class loads into memory.
+
+It's usually the fault of a bad project structure and improper use of SoftObject and SoftClass pointers, that causes casts to be "expensive".

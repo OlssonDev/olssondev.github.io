@@ -20,8 +20,8 @@ title: Easy Asset Creator Documentation
     + [Add Content Browser drag drop support](#add-content-browser-drag-drop-support)
 * [Deleting Assets](#deleting-assets)
 + [Common Issues](#common-issues)
-    + [My asset won't update its name in the menus](#my-asset-wont-update-its-name-in-the-menus)
-    + [My asset doesn't show up in the create asset menu](#my-asset-doesnt-show-up-in-create-asset-menu)
+    + [My class won't update its name in the menus](#my-class-wont-update-its-name-in-the-menus)
+    + [My class doesn't show up in the create asset menu](#my-class-doesnt-show-up-in-create-asset-menu)
 
 
 <a name="plugin-overview"></a>
@@ -197,12 +197,12 @@ You can delete any Asset Action or Asset Factories without any dangerous impact.
 <a name="common-issues"></a>
 ## Common Issues
 
-<a name="my-asset-wont-update-its-name-in-the-menus"></a>
-#### My asset won't update its name in the menus
+<a name="my-class-wont-update-its-name-in-the-menus"></a>
+#### My class won't update its name in the menus
 
 Try to save and compile the class.
 
-<a name="my-asset-doesnt-show-up-in-create-asset-menu"></a>
-#### My asset doesn't show up in the create asset menu
+<a name="my-class-doesnt-show-up-in-create-asset-menu"></a>
+#### My class doesn't show up in the create asset menu
 
 Make sure you have an Asset Action with a category and class assigned, as well as an Asset Factory with the same class assigned to **Parent Class** as in the Asset Action.

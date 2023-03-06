@@ -19,7 +19,7 @@ title: Easy Asset Creator Documentation
     + [Add to Place Actors menu](#add-to-place-actors-menu)
     + [Add Content Browser drag drop support](#add-content-browser-drag-drop-support)
 * [Deleting Assets](#deleting-assets)
-+ [Commond Issues](#common-issues)
++ [Common Issues](#common-issues)
     + [My asset won't update its name in the menus](#my-asset-wont-update-its-name-in-the-menus)
     + [My asset doesn't show up in the create asset menu](#my-asset-doesnt-show-up-in-create-asset-menu)
 

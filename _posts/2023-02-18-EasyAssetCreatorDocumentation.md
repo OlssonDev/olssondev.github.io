@@ -14,7 +14,7 @@ title: Easy Asset Creator Documentation
 	+ [Setting up your Asset Factory](#setting-up-your-asset-factory)
 * [Asset Appearance](#asset-appearance)
     + [Asset name & tooltip](#asset-name-tooltip)
-	+ [Asset Color](#asset-color)
+	+ [Asset color](#asset-color)
 + [Asset Action Fragments](#asset-action-fragments)
     + [Add to Place Actors menu](#add-to-place-actors-menu)
     + [Add Content Browser drag drop support](#add-content-browser-drag-drop-support)
@@ -136,7 +136,7 @@ Now your asset should be displayed with the new name and tooltip:
 ![NewNameTooltipImage](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_14.JPG)
 
 <a name="asset-color"></a>
-### Asset Color
+### Asset color
 
 To change the color of the class in the menu, go into your **Asset Action** and change the color under **Asset Color**
 

@@ -19,6 +19,10 @@ title: Easy Asset Creator Documentation
     + [Add to Place Actors menu](#add-to-place-actors-menu)
     + [Add Content Browser drag drop support](#add-content-browser-drag-drop-support)
 * [Deleting Assets](#deleting-assets)
++ [Commond Issues](#common-issues)
+    + [My asset won't update its name in the menus](#my-asset-wont-update-its-name-in-the-menus)
+    + [My asset doesn't show up in the create asset menu](#my-asset-doesnt-show-up-in-create-asset-menu)
+
 
 <a name="plugin-overview"></a>
 ## Plugin Overview 
@@ -189,3 +193,16 @@ Now the asset should behave like this:
 You can delete any Asset Action or Asset Factories without any dangerous impact. It might say it still has memory references left and you have to force delete the asset, but the plugin handles that.
 
 ![DeleteAssetPic](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_26.JPG)
+
+<a name="common-issues"></a>
+## Common Issues
+
+<a name="my-asset-wont-update-its-name-in-the-menus"></a>
+#### My asset won't update its name in the menus
+
+Try to save and compile the class.
+
+<a name="my-asset-doesnt-show-up-in-create-asset-menu"></a>
+#### My asset doesn't show up in the create asset menu
+
+Make sure you have an Asset Action with a category and class assigned, as well as an Asset Factory with the same class assigned to **Parent Class** as in the Asset Action.

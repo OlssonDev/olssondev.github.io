@@ -4,7 +4,7 @@ title: Easy Asset Creator Documentation
 ---
 
 # Table of Contents
-* [Plugin Overview](#plugin-overview)
+* [Plugin overview](#plugin-overview)
 + [Asset Action](#asset-action)
     + [Create an Asset Action](#create-an-asset-action)
     + [Setting up your Asset Action](#setting-up-your-asset-action)
@@ -12,20 +12,20 @@ title: Easy Asset Creator Documentation
 * [Asset Factory](#asset-factory)
     + [Create an Asset Factory](#create-an-asset-factory)
 	+ [Setting up your Asset Factory](#setting-up-your-asset-factory)
-* [Asset Appearance](#asset-appearance)
+* [Asset appearance](#asset-appearance)
     + [Asset name & tooltip](#asset-name-tooltip)
 	+ [Asset color](#asset-color)
 + [Asset Action Fragments](#asset-action-fragments)
     + [Add to Place Actors menu](#add-to-place-actors-menu)
     + [Add Content Browser drag drop support](#add-content-browser-drag-drop-support)
-* [Deleting Assets](#deleting-assets)
-+ [Common Issues](#common-issues)
+* [Deleting assets](#deleting-assets)
++ [Common issues](#common-issues)
     + [My class won't update its name in the menus](#my-class-wont-update-its-name-in-the-menus)
     + [My class doesn't show up in the create asset menu](#my-class-doesnt-show-up-in-create-asset-menu)
 
 
 <a name="plugin-overview"></a>
-## Plugin Overview 
+## Plugin overview 
 
 Making editor tools for creating and placing assets is a tedious and time consuming process, and usually requires C++ to set up. Easy Asset Creator makes it easy to create tools for your assets, and all of it can be managed inside the editor with no requirements for an editor restart.
 
@@ -188,14 +188,14 @@ Now the asset should behave like this:
 ![DragDropGif](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/DragDropGif.gif)
 
 <a name="deleting-assets"></a>
-## Deleting Assets
+## Deleting assets
 
 You can delete any Asset Action or Asset Factories without any dangerous impact. It might say it still has memory references left and you have to force delete the asset, but the plugin handles that.
 
 ![DeleteAssetPic](https://raw.githubusercontent.com/OlssonDev/olssondev.github.io/master/assets/img/EasyAssetCreator/Image_26.JPG)
 
 <a name="common-issues"></a>
-## Common Issues
+## Common issues
 
 <a name="my-class-wont-update-its-name-in-the-menus"></a>
 #### My class won't update its name in the menus
